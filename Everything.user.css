@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Everything
+@namespace      github.com/openstyles/stylus
+@version        1.0.3
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+#comments,
+.comments,
+#comment,
+.comment,
+.Chat,
+.reviews{
+    display:none!important;
+}
+
