@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.5.11
+@version 2.5.12
 @advanced color color_progbar "Video progress bar color" #5099FF
 @advanced color color_logo "Logo color" indianred
 
@@ -163,6 +163,12 @@ ytm-thumbnail-overlay-resume-playback-renderer,
    box-shadow: 0px 0px 12px rgba(120, 120, 120, 0.3), 0px 0px 12px rgba(120, 120, 120, 0.3), 0px 0px 12px rgba(120, 120, 120, 0.3) !important;
 }
 .YtmProgressBarProgressBarPlayheadDot {
+   background: rgba(255, 255, 255, 0)  !important;
+   border-color: rgba(255, 255, 255, 0)  !important;
+   box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0) !important;
+   transition: box-shadow 0.0s, background 0.0s !important;    
+}
+.YtmProgressBarProgressBarPlayheadDotInDragging {
    background: #FFFFFF !important;
    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 20%, /*[[color_progbar]]*/ 100%) !important;
    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 20%,/*[[color_progbar]]*/ 100%) !important;
