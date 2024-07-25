@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.6.9
+! Version: 1.6.10
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -383,7 +383,7 @@ m.youtube.com##ytm-universal-watch-card-renderer
 ! product
 m.youtube.com##ytm-product-card-renderer
 ! 4k badge
-m.youtube.com##ytm-badge-and-byline-renderer[data-is-all-badges="true"]:has-text(4K)
+m.youtube.com##ytm-badge-and-byline-renderer[data-is-all-badges="true"]
 !! video description
 www.youtube.com##ytd-search ytd-video-renderer .metadata-snippet-container,ytd-search ytd-video-renderer .metadata-snippet-container-one-line,ytd-search ytd-video-renderer #expandable-metadata
 
