@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.6.11
+! Version: 1.7.0
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -334,9 +334,7 @@ m.youtube.com##yt-comment-action-buttons-renderer
 www.youtube.com##ytd-browse[page-subtype="home"]
 m.youtube.com##ytm-browse div[tab-identifier="FEwhat_to_watch"] .rich-grid-renderer-contents
 !! chips
-m.youtube.com##.all-chip-renderer
-m.youtube.com##ytm-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]
-m.youtube.com##ytm-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"]
+m.youtube.com##ytm-chip-cloud-chip-renderer:not(.more-drawer)
 
 !!! history
 !! history page
