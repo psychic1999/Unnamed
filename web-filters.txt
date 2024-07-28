@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.6.10
+! Version: 1.6.11
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -74,8 +74,6 @@ fandom.com##.search-seeding
 !! Hide edit buttons at the top-left of every page/article
 fandom.com##.page-side-tool.page-side-edit
 fandom.com##.mw-editsection
-!! Hide the Gamespot Expert Reviews section
-fandom.com##.reviews
 
 !!! github
 !! Hide the changelog and announcements from the homepage
