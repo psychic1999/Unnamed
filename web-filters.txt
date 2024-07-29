@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.5
+! Version: 1.7.6
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -379,7 +379,7 @@ m.youtube.com##ytm-product-card-renderer
 ! 4k badge
 m.youtube.com##ytm-badge-and-byline-renderer[data-is-all-badges="true"]
 !! video description
-www.youtube.com##ytd-search ytd-video-renderer .metadata-snippet-container,ytd-search ytd-video-renderer .metadata-snippet-container-one-line,ytd-search ytd-video-renderer #expandable-metadata
+www.youtube.com##ytd-search .metadata-snippet-container,ytd-search .metadata-snippet-container-one-line,ytd-search #expandable-metadata
 
 !!! shorts
 !! Disable infinite srolling in Youtube Shorts
@@ -390,7 +390,7 @@ www.youtube.com##ytd-reel-shelf-renderer
 www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
 m.youtube.com##ytm-reel-shelf-renderer
 ! empty space
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-shelf-renderer[is-shorts]:upward(ytd-rich-section-renderer.ytd-rich-grid-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-shelf-renderer[is-shorts]:upward(ytd-rich-section-renderer)
 m.youtube.com##ytm-browse:has(div[tab-identifier="FEsubscriptions"],.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
 !! search results
 www.youtube.com##ytd-search ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
