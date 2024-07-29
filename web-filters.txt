@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.4
+! Version: 1.7.5
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -401,7 +401,7 @@ m.youtube.com##ytm-rich-grid-renderer.is-shorts
 !! chip bar
 www.youtube.com###chip-bar yt-chip-cloud-chip-renderer:has(>.yt-chip-cloud-chip-renderer[title="Shorts"])
 !! trending(foreign countries)
-www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
+www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
 m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
 
 !!! sidebar
@@ -432,12 +432,12 @@ youtube.com###google-feedback
 
 !!! trending
 !! description
-www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) #description-text
+www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) #description-text
 !! Creator on the Rise
-www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-shelf-renderer:has(.badge-style-type-featured)
+www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-shelf-renderer:has(.badge-style-type-featured)
 m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(.shelf-featured-badge)
 !! Recently trending
-www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-item-section-renderer:has(.grid-subheader:has-text(Recently trending))
+www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-item-section-renderer:has(.grid-subheader:has-text(Recently trending))
 m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-shelf-renderer
 !! destinations
 m.youtube.com##ytm-destination-button-renderer:has(>[href^="/channel/"],>[href="/gaming"],>[href="/podcasts"],>[href="/playables"])
