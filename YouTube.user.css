@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.5.12
+@version 2.6.0
 @advanced color color_progbar "Video progress bar color" #5099FF
 @advanced color color_logo "Logo color" indianred
 
@@ -14,13 +14,13 @@ ytd-search ytd-video-renderer,
 ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-video-renderer{
     display: inline-flex;
     width:50%!important;
-    min-width:350px;
+    min-width:320px;
     flex-direction: row!important;
 }
 ytd-search ytd-playlist-renderer{
     display: inline-grid;
     width:50%;
-    min-width: 350px;
+    min-width: 320px;
     justify-items: start;
 }
 ytd-search ytd-video-renderer ytd-thumbnail{
