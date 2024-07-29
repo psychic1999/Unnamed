@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.1
+! Version: 1.7.2
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -403,7 +403,6 @@ www.youtube.com###chip-bar yt-chip-cloud-chip-renderer:has(>.yt-chip-cloud-chip-
 !! trending(foreign countries)
 www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
 m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
-m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"]) ytm-compact-video-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
 
 !!! sidebar
 !! home
@@ -437,7 +436,8 @@ www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subt
 !! Creator on the Rise
 www.youtube.com##ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-shelf-renderer:has(.badge-style-type-featured)
 m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(.shelf-featured-badge)
-m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-shelf-renderer:has(.shelf-featured-badge)
+!! Recently trending
+m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-shelf-renderer
 !! destinations
 m.youtube.com##ytm-destination-button-renderer:has(>[href^="/channel/"],>[href="/gaming"],>[href="/podcasts"],>[href="/playables"])
 
