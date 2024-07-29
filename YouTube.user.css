@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.0
+@version 2.6.1
 @advanced color color_progbar "Video progress bar color" #5099FF
 @advanced color color_logo "Logo color" indianred
 
@@ -11,7 +11,7 @@
 
 /*////////////// LAYOUT //////////////*/
 ytd-search ytd-video-renderer,
-ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) ytd-video-renderer{
+ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-video-renderer{
     display: inline-flex;
     width:50%!important;
     min-width:320px;
@@ -28,7 +28,7 @@ ytd-search ytd-video-renderer ytd-thumbnail{
 }
 ytd-search #dismissible.ytd-video-renderer,    
 ytd-search #content.ytd-playlist-renderer,
-ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) #dismissible.ytd-video-renderer{ 
+ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) #dismissible.ytd-video-renderer{ 
     width:100%;
 }
     
@@ -38,7 +38,7 @@ ytd-search yt-including-results-for-renderer{
     display: block;
 }
 ytd-search ytd-video-renderer #video-title,
-ytd-browse:has(ytd-two-column-browse-results-renderer[page-subtype="trending"],ytd-two-column-browse-results-renderer[page-subtype="explore"]) #video-title{ 
+ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) #video-title{ 
     font-size: 1.6rem!important;
     line-height: 2.2rem!important;
     font-weight: 500!important;
