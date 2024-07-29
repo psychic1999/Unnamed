@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Everything
 @namespace      github.com/openstyles/stylus
-@version        1.0.3
+@version        1.0.4
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -10,6 +10,7 @@
 .comments,
 #comment,
 .comment,
+#comment-tree,         /* reddit */
 .Chat,
 .reviews{
     display:none!important;
