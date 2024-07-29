@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.6
+! Version: 1.7.7
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -399,7 +399,7 @@ m.youtube.com##ytm-search ytm-video-with-context-renderer:has(ytm-thumbnail-over
 www.youtube.com##ytd-rich-grid-renderer[is-shorts-grid]
 m.youtube.com##ytm-rich-grid-renderer.is-shorts
 !! chip bar
-www.youtube.com###chip-bar yt-chip-cloud-chip-renderer:has(>.yt-chip-cloud-chip-renderer[title="Shorts"])
+www.youtube.com##yt-chip-cloud-chip-renderer:has(>[title="Shorts"])
 !! trending(foreign countries)
 www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
 m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
