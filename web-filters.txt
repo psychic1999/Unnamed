@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.0
+! Version: 1.7.1
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -187,8 +187,6 @@ www.reddit.com##recent-posts
 www.reddit.com##.object-cover
 !! recent subreddits
 www.reddit.com##reddit-recent-pages
-!! comments
-www.reddit.com###comment-tree
 !! related posts
 www.reddit.com##reddit-pdp-right-rail-post
 !! trending
