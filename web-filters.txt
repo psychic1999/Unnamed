@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.8
+! Version: 1.7.9
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -390,7 +390,7 @@ www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
 m.youtube.com##ytm-reel-shelf-renderer
 ! empty space
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-shelf-renderer[is-shorts]:upward(ytd-rich-section-renderer)
-m.youtube.com##ytm-browse:has(div[tab-identifier="FEsubscriptions"],.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
+m.youtube.com##ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
 !! search results
 www.youtube.com##ytd-search ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
 m.youtube.com##ytm-search ytm-video-with-context-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
@@ -401,7 +401,7 @@ m.youtube.com##ytm-rich-grid-renderer.is-shorts
 www.youtube.com##yt-chip-cloud-chip-renderer:has(>[title="Shorts"])
 !! trending(foreign countries)
 www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
-m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
+m.youtube.com##ytm-browse:has(div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
 
 !!! sidebar
 !! home
@@ -434,10 +434,10 @@ youtube.com###google-feedback
 www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) #description-text
 !! Creator on the Rise
 www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-shelf-renderer:has(.badge-style-type-featured)
-m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(.shelf-featured-badge)
+m.youtube.com##ytm-browse:has(div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer:has(.shelf-featured-badge)
 !! Recently trending
 www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) ytd-item-section-renderer:has(.grid-subheader:has-text(Recently trending))
-m.youtube.com##ytm-browse:has(.tab-content[tab-title="Now"],.tab-content[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-shelf-renderer
+m.youtube.com##ytm-browse:has(div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-shelf-renderer
 !! destinations
 m.youtube.com##ytm-destination-button-renderer:has(>[href^="/channel/"],>[href="/gaming"],>[href="/podcasts"],>[href="/playables"])
 
