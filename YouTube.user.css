@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.4
+@version 2.6.5
 @advanced color color_progbar "Video progress bar color" #5099FF
 @advanced color color_logo "Logo color" indianred
 
@@ -143,7 +143,7 @@ ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[ta
 }
 /*////////////// PROGRESSBAR //////////////*/    
 .thumbnail-overlay-resume-playback-progress,
-.YtProgressBarProgressBarPlayed,
+.YtProgressBarLineProgressBarPlayed,
 .YtChapteredProgressBarChapteredPlayerBarFill,
 .YtChapteredProgressBarChapteredPlayerBarChapter[style*="background-color: red;"]{
    background: /*[[color_progbar]]*/;
@@ -154,7 +154,7 @@ ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[ta
 }
    
 ytm-thumbnail-overlay-resume-playback-renderer,
-.YtProgressBarProgressBarLoaded,
+.YtProgressBarLineProgressBarLoaded,
 .YtChapteredProgressBarChapteredPlayerBarLoaded{
    background: #70B9FF;
    background: -moz-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.3) 45%,  rgba(255, 255, 255, 0.3) 55%, rgba(120, 120, 120, 0.3) 100%);
