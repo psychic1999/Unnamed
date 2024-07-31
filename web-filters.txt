@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.11
+! Version: 1.7.12
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -184,7 +184,8 @@ www.pornhub.com##.emailVerHomepageContainer
 !! recent posts
 www.reddit.com##recent-posts
 !! images
-www.reddit.com##.object-cover
+||preview.redd.it/$image
+||external-preview.redd.it/$image
 !! recent subreddits
 www.reddit.com##reddit-recent-pages
 !! related posts
