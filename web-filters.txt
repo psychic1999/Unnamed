@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.14
+! Version: 1.7.15
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -420,10 +420,10 @@ m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts)
 m.youtube.com##ytm-pivot-bar-item-renderer:has(>.shorts)
 !! explore
 www.youtube.com##ytd-guide-entry-renderer:has(>a[href^="/channel/"],>a[href="/gaming"],>a[href="/podcasts"],>a[href="/playables"])
-m.youtube.com##drawer-layout-container navigation-item-view-model:has(a[href^="/channel/"],a[href="/gaming"],a[href="/podcasts"],a[href="/playables"])
+m.youtube.com##navigation-item-view-model:has(a[href^="/channel/"],a[href="/gaming"],a[href="/podcasts"],a[href="/playables"])
 !! more from youtube
 www.youtube.com##ytd-guide-entry-renderer:has(>a[title="YouTube TV"],>a[title="YouTube Kids"])
-m.youtube.com##ytm-multi-page-menu-section-renderer ytm-compact-link-renderer:has(>a[href^="https://tv.youtube.com/"],>a[href^="https://www.youtubekids.com/"])
+m.youtube.com##ytm-compact-link-renderer:has(>a[href^="https://tv.youtube.com/"],>a[href^="https://www.youtubekids.com/"])
 !! footer
 www.youtube.com##ytd-guide-renderer #footer
 !! report hisory
@@ -480,9 +480,9 @@ www.youtube.com##ytd-merch-shelf-renderer
 ! ticket shelf
 www.youtube.com###ticket-shelf
 ! topic (kids/ gaming)
-www.youtube.com##ytd-watch-flexy ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC]
+www.youtube.com##ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC]
 ! box art (game being played)
-www.youtube.com##ytd-watch-flexy ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_BOX_ART]
+www.youtube.com##ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_BOX_ART]
 
 !!! YouTube Music
 !! sidebar
