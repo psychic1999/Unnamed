@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.5
+@version 2.6.6
 @advanced color color_progbar "Video progress bar color" #5099FF
 @advanced color color_logo "Logo color" indianred
 
@@ -96,12 +96,9 @@ ytm-search ytm-compact-playlist-renderer .media-item-metadata  {
     right:12px; 
 }
 
-/*////////////// COLOR //////////////*/
+/*////////////// PIVOTBAR //////////////*/
 ytm-pivot-bar-renderer {
     border-top-color: currentcolor;
-}
-.pivot-bar-item-title{
-    color: beige!important;
 }
 ytm-pivot-bar-item-renderer:has(>.pivot-subs,>.w2w){    
     background-color: #e62a79!important;   
@@ -116,6 +113,9 @@ ytm-pivot-bar-item-renderer:has(>.pivot-subs[aria-selected="true"]){
     outline-width:3px;
     z-index: 1!important;
 }
+.pivot-subs[aria-selected="true"] .pivot-bar-item-title{
+    color: darkred!important;
+}
 ytm-pivot-bar-item-renderer:has(>.pivot-library[aria-selected="true"]){
     border-top-left-radius: 4px;
     outline-style: solid!important;
@@ -123,9 +123,14 @@ ytm-pivot-bar-item-renderer:has(>.pivot-library[aria-selected="true"]){
     outline-width:3px;
     z-index: 1!important;
 }
+.pivot-library[aria-selected="true"] .pivot-bar-item-title{
+    color: darkslategrey!important;
+}    
+/*////////////// SIDEBAR //////////////*/
 .drawer-layout.opened {
     background-color: darkred;
 }
+/*////////////// INFOCARD //////////////*/
 ytm-video-with-context-renderer .details,
 ytm-compact-playlist-renderer .details,
 ytm-item-section-renderer:has(ytm-channel-featured-video-renderer),    
