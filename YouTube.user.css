@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.12
+@version 2.6.13
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
 @advanced color color_infocard "Infocard color" #ffc0cb7a
@@ -56,7 +56,7 @@ ytd-feed-filter-chip-bar-renderer[component-style=FEED_FILTER_CHIP_BAR_STYLE_TYP
 /*////////////// LAYOUT //////////////*/
 ytm-search ytm-video-with-context-renderer,
 ytm-search ytm-compact-playlist-renderer,
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer,
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer,
 .video-with-context-renderer-ghost-card {
    display: inline-flex!important;
    width: calc(50% - 4px);
@@ -66,9 +66,9 @@ ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[ta
    flex-direction: column;
 }
 
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer .media-item-headline,
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer .media-item-headline,
 ytm-search ytm-video-with-context-renderer .media-item-headline,
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer ytm-badge-and-byline-renderer{
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer ytm-badge-and-byline-renderer{
     width:83%;
 }
 ytm-search ytm-video-with-context-renderer ytm-badge-and-byline-renderer  {
@@ -76,20 +76,20 @@ ytm-search ytm-video-with-context-renderer ytm-badge-and-byline-renderer  {
     max-height: 4.5em;    
     width:83%;
 }
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer .media-item-menu,
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer .media-item-menu,
 ytm-search ytm-video-with-context-renderer .media-item-menu  {
     position:relative;
     right:48px;
 }
 
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer .media-channel,
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer .media-channel,
 ytm-search ytm-video-with-context-renderer .media-channel,
 ytm-search ytm-compact-playlist-renderer .media-channel{
     position:relative;
     right:6px;
     
 }
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer .media-item-metadata,
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer .media-item-metadata,
 ytm-search ytm-video-with-context-renderer .media-item-metadata,
 ytm-search ytm-compact-playlist-renderer .media-item-metadata  {
     min-width:100%;
@@ -134,11 +134,11 @@ ytm-item-section-renderer:has(ytm-channel-featured-video-renderer),
 }
 /*////////////// THUMBNAIL //////////////*/
 ytm-search ytm-video-with-context-renderer .video-thumbnail-container-large,
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer .video-thumbnail-container-large,
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer .video-thumbnail-container-large,
 .video-with-context-renderer-ghost-card .video-with-context-renderer-ghost-card__thumbnail {    
     border-radius: 8px;
 }
-ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-item-section-renderer{
+ytm-browse:has(div[tab-identifier="FEsubscriptions"],div[tab-title="Now"],div[tab-title="刚刚"]) ytm-item-section-renderer{
     border-bottom: 0; 
 }
 /*////////////// PROGRESSBAR //////////////*/    
