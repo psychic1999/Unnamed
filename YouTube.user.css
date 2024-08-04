@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.10
+@version 2.6.11
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
 @advanced color color_infocard "Infocard color" #ffc0cb7a
@@ -125,10 +125,6 @@ ytm-pivot-bar-item-renderer:has(>.pivot-library[aria-selected="true"]){
 .pivot-library[aria-selected="true"] .pivot-bar-item-title{
     color: beige!important;
 }       
-/*////////////// SIDEBAR //////////////*/
-.drawer-layout.opened {
-    background-color: darkred;
-}
 /*////////////// INFOCARD //////////////*/
 ytm-video-with-context-renderer .details,
 ytm-compact-playlist-renderer .details,
