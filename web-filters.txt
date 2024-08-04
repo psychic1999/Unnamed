@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.23
+! Version: 1.7.24
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -205,8 +205,6 @@ www.rottentomatoes.com##.review_table:has(>.audience-review-row)
 !! desktop
 ! Explore Premium
 open.spotify.com##button[aria-label="Upgrade to Premium"]
-! lyrics button
-open.spotify.com##button[data-testid="lyrics-button"]
 ! Recently played
 open.spotify.com##section[aria-label="Recently played"]
 ! footer
