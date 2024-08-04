@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.18
+! Version: 1.7.19
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -442,6 +442,8 @@ www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore
 m.youtube.com##ytm-browse:has(div[tab-title="Now"],div[tab-title="刚刚"],div[tab-identifier="FEexplore"]) ytm-shelf-renderer
 !! destinations
 m.youtube.com##ytm-destination-button-renderer:has(>[href^="/channel/"],>[href="/gaming"],>[href="/podcasts"],>[href="/playables"])
+!! tabs
+youtube.com##yt-tab-shape[tab-title="Gaming"],yt-tab-shape[tab-title="Movies"]
 
 !!! videoplay
 !! player
