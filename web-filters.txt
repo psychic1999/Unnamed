@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.19
+! Version: 1.7.20
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -417,7 +417,7 @@ www.youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
 m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts)
 m.youtube.com##ytm-pivot-bar-item-renderer:has(>.shorts)
 !! explore
-www.youtube.com##ytd-guide-entry-renderer:has(>a[href^="/channel/"],>a[href="/gaming"],>a[href="/podcasts"],>a[href="/playables"])
+www.youtube.com##ytd-guide-section-renderer:has(a[href^="/feed/trending"])
 m.youtube.com##navigation-item-view-model:has(>navigation-item-shape-component:has(>a[href^="/channel/"],>a[href="/gaming"],>a[href="/podcasts"],>a[href="/playables"]))
 !! more from youtube
 www.youtube.com##ytd-guide-entry-renderer:has(>a[title="YouTube TV"],>a[title="YouTube Kids"])
