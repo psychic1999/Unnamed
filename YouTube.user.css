@@ -1,9 +1,10 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.8
+@version 2.6.9
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
+@advanced color color_infocard "Logo color" #ffc0cb7a
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -133,7 +134,7 @@ ytm-video-with-context-renderer .details,
 ytm-compact-playlist-renderer .details,
 ytm-item-section-renderer:has(ytm-channel-featured-video-renderer),    
 .video-with-context-renderer-ghost-card__metadata {
-    background-color: #ffc0cb7a;
+    background-color: /*[[color_infocard]]*/;
 }
 /*////////////// THUMBNAIL //////////////*/
 ytm-search ytm-video-with-context-renderer .video-thumbnail-container-large,
