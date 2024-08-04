@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.9
+@version 2.6.10
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
-@advanced color color_infocard "Logo color" #ffc0cb7a
+@advanced color color_infocard "Infocard color" #ffc0cb7a
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -46,7 +46,7 @@ ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) #video-title{
 }
 /*////////////// TABFIX //////////////*/
 tp-yt-app-toolbar.ytd-tabbed-page-header {
-    background-color: #ffc0cb7a;
+    background-color: /*[[color_infocard]]*/;
 }
 ytd-feed-filter-chip-bar-renderer[component-style=FEED_FILTER_CHIP_BAR_STYLE_TYPE_CHANNEL_PAGE_GRID] {
     margin-bottom: 8px;
