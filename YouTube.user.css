@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.7
-@advanced color color_progbar "Video progress bar color" #5099FF
-@advanced color color_logo "Logo color" indianred
+@version 2.6.8
+@advanced color color_progbar "Video progress bar color" #f00
+@advanced color color_logo "Logo color" #10cab1
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
