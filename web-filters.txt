@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.7.21
+! Version: 1.7.22
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -333,9 +333,7 @@ m.youtube.com##yt-comment-action-buttons-renderer
 !!! home
 !! videos
 www.youtube.com##ytd-browse[page-subtype="home"]
-m.youtube.com##div[tab-identifier="FEwhat_to_watch"] .rich-grid-renderer-contents
-!! chips
-m.youtube.com##div[tab-identifier="FEwhat_to_watch"] ytm-chip-cloud-chip-renderer:not(.more-drawer)
+m.youtube.com##div[tab-identifier="FEwhat_to_watch"] 
 
 !!! history
 !! history page
@@ -417,7 +415,6 @@ m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts)
 m.youtube.com##ytm-pivot-bar-item-renderer:has(>.shorts)
 !! explore
 www.youtube.com##ytd-guide-section-renderer:has(a[href^="/feed/trending"])
-m.youtube.com##navigation-item-view-model:has(>navigation-item-shape-component:has(>a[href^="/channel/"],>a[href="/gaming"],>a[href="/podcasts"],>a[href="/playables"]))
 !! more from youtube
 www.youtube.com##ytd-guide-entry-renderer:has(>a[title="YouTube TV"],>a[title="YouTube Kids"])
 m.youtube.com##ytm-compact-link-renderer:has(>a[href^="https://tv.youtube.com/"],>a[href^="https://www.youtubekids.com/"])
