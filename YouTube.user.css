@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.11
+@version 2.6.12
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
 @advanced color color_infocard "Infocard color" #ffc0cb7a
@@ -178,8 +178,7 @@ ytm-thumbnail-overlay-resume-playback-renderer,
 }
 /*////////////// HELLOKITTY //////////////*/
 .mobile-topbar-title,
-.mobile-topbar-logo,
-.yt-spec-more-drawer-view-model__more-drawer-header-logo{
+.mobile-topbar-logo{
    color:/*[[color_logo]]*/!important;
 }
 [d="M 60.699219 0.30078125 C 60.699219 0.30078125 22.699219 0.30078125 13.199219 2.8007812 C 7.9992187 4.2007813 3.9 8.3 2.5 13.5 C 0 23 0 42.699219 0 42.699219 C 0 42.699219 0 62.500391 2.5 71.900391 C 3.9 77.100391 7.9992188 81.199609 13.199219 82.599609 C 22.699219 85.099609 60.699219 85.099609 60.699219 85.099609 C 60.699219 85.099609 98.699219 85.099609 108.19922 82.599609 C 113.39922 81.199609 117.50039 77.100391 118.90039 71.900391 C 121.40039 62.400391 121.40039 42.699219 121.40039 42.699219 C 121.40039 42.699219 121.40039 23 118.90039 13.5 C 117.50039 8.3 113.39922 4.2007812 108.19922 2.8007812 C 98.699219 0.30078125 60.699219 0.30078125 60.699219 0.30078125 z M 48.5 24.5 L 80.099609 42.800781 L 48.5 61 L 48.5 24.5 z "]
