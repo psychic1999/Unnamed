@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.13
+@version 2.6.14
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
 @advanced color color_infocard "Infocard color" #ffc0cb7a
@@ -33,9 +33,9 @@ ytd-browse:has([page-subtype="trending"],[page-subtype="explore"]) #dismissible.
     width:100%;
 }
     
-ytd-search yt-showing-results-for-renderer,
-ytd-search yt-did-you-mean-renderer,
-ytd-search yt-including-results-for-renderer{
+yt-showing-results-for-renderer,
+yt-did-you-mean-renderer,
+yt-including-results-for-renderer{
     display: block;
 }
 ytd-search ytd-video-renderer #video-title,
