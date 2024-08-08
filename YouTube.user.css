@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.6.14
+@version 2.7.0
 @advanced color color_progbar "Video progress bar color" #f00
 @advanced color color_logo "Logo color" #10cab1
 @advanced color color_infocard "Infocard color" #ffc0cb7a
@@ -50,7 +50,18 @@ tp-yt-app-toolbar.ytd-tabbed-page-header {
 }
 ytd-feed-filter-chip-bar-renderer[component-style=FEED_FILTER_CHIP_BAR_STYLE_TYPE_CHANNEL_PAGE_GRID] {
     margin-bottom: 8px;
-}	
+}
+/*////////////// SHORTSTAB //////////////*/
+yt-tab-shape[tab-title="Shorts"]{
+    display:none!important;
+      
+}
+yt-tab-group-shape:has(yt-tab-shape[tab-title="Shorts"]):not(:has(yt-tab-shape:nth-of-type(1)[aria-selected="true"]),:has(yt-tab-shape:nth-of-type(2)[aria-selected="true"])) .yt-tab-group-shape-wiz__slider{
+  position:relative!important;
+  right:24px!important;      
+}
+
+
 /*////////////// MOBILE //////////////*/
 
 /*////////////// LAYOUT //////////////*/
