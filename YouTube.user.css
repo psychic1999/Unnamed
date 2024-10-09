@@ -1,0 +1,319 @@
+/* ==UserStyle==
+@name   YouTube fix
+@namespace youtube
+@version 2.14.0
+@advanced color color_progbar "Video progress bar color" #ff00007a
+@advanced dropdown bgchanger "Background Image" {
+    1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
+    2 "Bing random" <<<EOT https://bing.img.run/rand_uhd.php EOT;
+    bgchanger-custom-dropdown "Custom" <<<EOT /*[[bgchanger-custom]]*\/ EOT;
+}
+@advanced text bgchanger-custom "Background Image (Custom)" "https://example.com/image.png"
+@advanced dropdown bgsize "Background Size" {
+    1 "Fill" <<<EOT cover EOT;
+    2 "Fit*" <<<EOT 100% EOT;
+}
+@advanced color color_screen "Screen color" rgba(0, 0, 0, .53)
+
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+/*////////////// DESKTOP //////////////*/
+ytd-app,
+html:has(ytm-app){
+    background-image: url(/*[[bgchanger]]*/)!important;
+    background-repeat: no-repeat!important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:  /*[[bgsize]]*/!important;
+}
+#chips-wrapper,
+#filter-chip-bar,
+.ytd-tabbed-page-header,
+ytd-mini-guide-entry-renderer,
+ytd-menu-popup-renderer,
+ytm-mobile-topbar-renderer,
+ytm-channel-list-sub-menu-renderer{
+    background-color: transparent!important;
+}
+html[dark]{
+ytd-masthead,
+ytd-mini-guide-renderer,
+ytd-multi-page-menu-renderer,
+    
+ytd-search,
+tp-yt-paper-dialog,
+#container.ytd-searchbox,
+.sbsb_a,    
+a.ytd-search-refinement-card-renderer,
+
+ytd-browse,
+tp-yt-app-toolbar.ytd-tabbed-page-header,
+.yt-contextual-sheet-layout-wiz,
+    
+ytd-watch-flexy,
+ytd-transcript-segment-list-renderer,
+ytd-transcript-search-panel-renderer,
+.watch-skeleton .skeleton-bg-color,
+yt-confirm-dialog-renderer{
+    background-color: /*[[color_screen]]*/!important;
+}
+}
+ytm-app:has(ytm-search,ytm-browse):not(:has(div[tab-identifier="FEwhat_to_watch"] )),
+.yt-spec-bottom-sheet-layout__bottom-sheet-renderer-container,
+
+.engagement-panel-container,
+.yt-spec-dialog-layout,
+.dialog,
+    
+.YtSearchboxComponentSuggestionsContainer,
+ytm-watch-card-rich-header-renderer{
+    background-color: /*[[color_screen]]*/!important;
+}
+html:has(ytm-watch,ytm-settings){
+    background-color: /*[[color_screen]]*/!important;
+    background-blend-mode:overlay!important;
+}
+    
+/*////////////// LAYOUT //////////////*/
+ytd-search ytd-video-renderer{
+    display: inline-flex;
+    width:20%!important; 
+    min-width:225px;
+    margin-top: 8px!important;
+}  
+ytd-search #dismissible.ytd-video-renderer{
+    display: inline-grid;    
+    width:100%;
+}  
+ytd-search .text-wrapper.ytd-video-renderer{
+    margin-top: 8px!important;
+}
+ytd-video-renderer[use-search-ui] #channel-info.ytd-video-renderer {
+    padding: 8px 0;
+    margin-right:8px;
+}
+ytd-search #badges.ytd-video-renderer {
+    margin-bottom: 0;
+}
+ytd-search ytd-video-renderer ytd-thumbnail{
+    min-width: 0!important;
+}   
+ytd-search #content.ytd-playlist-renderer{ 
+    width:100%;
+}
+ytd-search #list.ytd-playlist-renderer {    
+    margin-right:8px;
+}
+ytd-search ytd-playlist-renderer{
+    display: inline-grid;
+    width:40%;
+    min-width:450px;
+    justify-items: start;
+}
+ytd-search ytd-channel-renderer{
+    display: inline-flex;
+    width:40%!important;
+    min-width:450px;
+    flex-direction: row!important;
+} 
+ytd-search #content-section.ytd-channel-renderer{
+    flex-direction: column;
+    width:100%;
+}    
+ytd-search #info-section.ytd-channel-renderer{
+    margin-right:16px;
+}
+ytd-browse[page-subtype="subscriptions"] #contents.ytd-rich-grid-renderer{
+    padding-top: 0px;
+}
+    
+yt-showing-results-for-renderer,
+yt-did-you-mean-renderer,
+yt-including-results-for-renderer{
+    display: block;
+}
+ytd-search ytd-video-renderer #video-title,
+ytd-browse[page-subtype="subscriptions"] #video-title{ 
+    font-size: 1.4rem!important;
+    line-height: 2rem!important;
+    font-weight: 500!important;
+}
+ytd-search #video-title.ytd-playlist-renderer {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+ytd-browse[page-subtype="subscriptions"] .ytd-video-meta-block{ 
+    font-size: 1.2rem!important;
+    line-height: 1.8rem!important;
+}
+/*////////////// SHORTSTAB //////////////*/
+yt-tab-group-shape:has(yt-tab-shape[tab-title="Shorts"]):not(:has(yt-tab-shape:nth-of-type(1)[aria-selected="true"]),:has(yt-tab-shape:nth-of-type(2)[aria-selected="true"])) .yt-tab-group-shape-wiz__slider{
+    position:relative!important;
+    right:24px!important;      
+}
+/*////////////// VIDEOS PER ROW //////////////*/   
+ytd-browse[page-subtype="subscriptions"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 4"] {
+    --ytd-rich-grid-items-per-row: 5!important
+}
+ytd-browse[page-subtype="subscriptions"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 3"] {
+    --ytd-rich-grid-items-per-row: 5!important
+}
+ytd-browse[page-subtype="subscriptions"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 2"] {
+    --ytd-rich-grid-items-per-row: 4!important
+}
+ytd-browse[page-subtype="subscriptions"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 1"] {
+    --ytd-rich-grid-items-per-row: 3!important
+}
+ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer{
+    margin-left: calc(var(--ytd-rich-grid-item-margin) / 2)!important;
+    --ytd-rich-grid-row-margin: 20px!important;
+    min-width:125px!important
+}
+ytd-browse[page-subtype="channels"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 4"] {
+    --ytd-rich-grid-items-per-row: 5!important
+}
+ytd-browse[page-subtype="channels"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 3"] {
+    --ytd-rich-grid-items-per-row: 4!important
+}
+ytd-browse[page-subtype="channels"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 2"] {
+    --ytd-rich-grid-items-per-row: 3!important
+}
+ytd-browse[page-subtype="channels"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 1"] {
+    --ytd-rich-grid-items-per-row: 2!important
+}
+ytd-browse[page-subtype="channels"] ytd-rich-item-renderer{
+    margin-left: calc(var(--ytd-rich-grid-item-margin) / 2)!important;
+    --ytd-rich-grid-row-margin: 20px!important
+}
+/*////////////// HIDE TEXT ON PLAYER ACTION BUTTONS //////////////*/
+button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__button-text-content{
+    display:none
+}
+
+button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__icon{
+    margin-right: -2px!important;  
+    margin-left: -2px!important;   
+}
+/*////////////// MOBILE //////////////*/
+
+/*////////////// LAYOUT //////////////*/
+
+@media(orientation: portrait){
+ytm-search ytm-media-item,
+div[tab-identifier="FEsubscriptions"] ytm-media-item {
+    display: flex!important;    
+    flex-direction: row-reverse;
+} 
+ytm-search a.media-item-thumbnail-container,
+div[tab-identifier="FEsubscriptions"] a.media-item-thumbnail-container{
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+} 
+ytm-search .details,
+div[tab-identifier="FEsubscriptions"] .details {    
+    width: 70%;   
+}
+.video-with-context-renderer-ghost-card
+{
+    display: flex!important;    
+    flex-direction: row-reverse;
+    max-height:80px;  
+}
+.video-with-context-renderer-ghost-card__thumbnail 
+{    
+    width:30%;
+    scale:100% 25%;
+    position:relative;
+    bottom:65px;
+} 
+ytm-search ytm-video-with-context-renderer,
+div[tab-identifier="FEsubscriptions"] ytm-item-section-renderer,
+.video-with-context-renderer-ghost-card {
+   margin-right:4px;
+   margin-bottom:0!important; 
+}
+/*////////////// THUMBNAIL //////////////*/
+ytm-search ytm-video-with-context-renderer .video-thumbnail-container-large,
+div[tab-identifier="FEsubscriptions"] ytm-item-section-renderer .video-thumbnail-container-large,
+.video-with-context-renderer-ghost-card .video-with-context-renderer-ghost-card__thumbnail {    
+    border-radius: 6px;
+}
+}    
+
+/*////////////// PIVOTBAR //////////////*/
+ytm-pivot-bar-renderer {
+    border-top-color: currentcolor;
+}
+ytm-pivot-bar-item-renderer:has(>.pivot-subs,>.w2w){    
+    background-color: #f00!important;   
+}
+ytm-pivot-bar-item-renderer:has(>.pivot-you,>.library){    
+    background-color: lightslategrey!important;  
+}
+ytm-pivot-bar-item-renderer:has(>.pivot-subs[aria-selected="true"]){
+    border-top-right-radius: 4px;
+    outline-style: solid!important;
+    outline-color: darkred!important;
+    outline-width:3px;
+    z-index: 1!important;
+}
+ytm-pivot-bar-item-renderer:has(>.pivot-you[aria-selected="true"]){
+    border-top-left-radius: 4px;
+    outline-style: solid!important;
+    outline-color: darkslategrey!important;
+    outline-width:3px;
+    z-index: 1!important;
+}
+.pivot-subs[aria-selected="true"] .pivot-bar-item-title,
+.pivot-you[aria-selected="true"] .pivot-bar-item-title{
+    color: beige!important;
+}       
+
+    
+/*////////////// PROGRESSBAR //////////////*/    
+#progress.ytd-thumbnail-overlay-resume-playback-renderer,
+.thumbnail-overlay-resume-playback-progress,
+.ytp-play-progress,
+.YtProgressBarLineProgressBarPlayed,
+.YtChapteredProgressBarChapteredPlayerBarFill,
+.YtChapteredProgressBarChapteredPlayerBarChapter[style*="background-color: red;"],
+.ytp-button[aria-pressed]:after{
+   background: /*[[color_progbar]]*/;
+   background: -moz-linear-gradient(top, /*[[color_progbar]]*/ 0%, /*[[color_progbar]]*/ 35%, #ffffff 65%, /*[[color_progbar]]*/ 100%);
+   background: -webkit-linear-gradient(top, /*[[color_progbar]]*/ 0%,#ffffff 35%,#ffffff 65%,/*[[color_progbar]]*/ 100%);
+   background: linear-gradient(to bottom, /*[[color_progbar]]*/ 0%,#ffffff 24%,#ffffff 65%,/*[[color_progbar]]*/ 100%);
+   box-shadow: 0px 0px 20px /*[[color_progbar]]*/, 0px 0px 20px /*[[color_progbar]]*/, 0px 0px 20px /*[[color_progbar]]*/ !important;
+}
+ytd-thumbnail-overlay-resume-playback-renderer,   
+ytm-thumbnail-overlay-resume-playback-renderer,
+.ytp-load-progress,
+.YtProgressBarLineProgressBarLoaded,
+.YtChapteredProgressBarChapteredPlayerBarLoaded{
+   background: #70B9FF;
+   background: -moz-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.3) 45%,  rgba(255, 255, 255, 0.3) 55%, rgba(120, 120, 120, 0.3) 100%);
+   background: -webkit-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(255, 255, 255, 0.3) 45%, rgba(255, 255, 255, 0.3) 55%,rgba(120, 120, 120, 0.3) 100%);
+   background: linear-gradient(to bottom, rgba(120, 120, 120, 0.3) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 55%,rgba(120, 120, 120, 0.3) 100%);
+   box-shadow: 0px 0px 12px rgba(120, 120, 120, 0.3), 0px 0px 12px rgba(120, 120, 120, 0.3), 0px 0px 12px rgba(120, 120, 120, 0.3) !important;
+}
+.ytp-scrubber-button,
+.YtProgressBarPlayheadProgressBarPlayheadDot {
+   background: rgba(255, 255, 255, 0)  !important;
+   border-color: rgba(255, 255, 255, 0)  !important;
+   box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0) !important;
+   transition: box-shadow 0.0s, background 0.0s !important;    
+}
+.ytp-scrubber-button:hover,
+.YtProgressBarPlayheadProgressBarPlayheadDotLarge,
+.ytp-live-badge[disabled]:before,
+.YtwPlayerTimeDisplayContentLiveDotHead::before,
+ytm-channel-list-sub-menu-avatar-renderer[status=live]::after,
+.ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox{
+   background: #FFFFFF !important;
+   background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 20%, /*[[color_progbar]]*/ 100%) !important;
+   background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 20%,/*[[color_progbar]]*/ 100%) !important;
+   background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 20%,/*[[color_progbar]]*/ 100%) !important;
+   border-color: #ffffff !important;
+   box-shadow: 0px 0px 10px /*[[color_progbar]]*/, 0px 0px 12px /*[[color_progbar]]*/, 0px 0px 14px /*[[color_progbar]]*/ !important; 
+}
+}    

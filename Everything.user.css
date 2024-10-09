@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           Everything
+@namespace      github.com/openstyles/stylus
+@version        1.1.12
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+#comments,
+.comments,
+#comment,
+.comment,
+.reviews,
+.Chat,
+/* twitter */
+div[aria-label="Timeline: Conversation"] div[data-testid="cellInnerDiv"]:not(:nth-of-type(1)),
+/* reddit */
+#comment-tree
+{
+    display:none!important;
+}
+

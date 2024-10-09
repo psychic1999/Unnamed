@@ -1,0 +1,593 @@
+! Title: web filters
+! Version: 1.9.18
+! Expires: 1 day
+! Homepage: https://github.com/psychic1999/Unnamed
+
+
+!!!! General websites 
+
+!!! crunchyroll
+!! premium promo
+www.crunchyroll.com##.erc-premium-header-link,.erc-premium-upsell-banner,.erc-watch-upsell-banner
+!! footer
+www.crunchyroll.com##.erc-footer
+
+!!! disqus
+||disqus.com/embed/comments/^$all
+
+!!! duckduckgo 
+!! news
+duckduckgo.com##.module--carousel-news
+duckduckgo.com##.result--news .js-result-image-wrapper
+!! videos
+duckduckgo.com##.module--carousel-videos
+!! related
+duckduckgo.com##.related-searches
+!! Learn more
+duckduckgo.com###features
+!! footer
+duckduckgo.com##.footer
+duckduckgo.com##.footer--mobile
+!! search-results
+! tab-all
+duckduckgo.com##ol.react-results--main article:has(a[href*=".cn"],a[href*="163.com"],a[href*="baidu.com"],a[href*="bilibili."],a[href*="douban.com"],a[href*="foxnews.com"],a[href*="msn.com"],a[href*="qq.com"],a[href*="reddit.com"],a[href*="sohu.com"],a[href*="weibo."],a[href*="zhihu.com"]) div[data-result="snippet"]
+! tab-news
+duckduckgo.com##.result--news:has(a[href*=".cn"],a[href*="163.com"],a[href*="foxnews.com"],a[href*="msn.com"],a[href*="qq.com"],a[href*="sohu.com"],a[href*="yahoo.com"]) .result__snippet
+
+!!! fandom
+!! Hide yellow sidebar
+fandom.com##.global-navigation
+fandom.com##.main-container:style(width: 100% !important; margin-left: auto !important; margin-right: auto !important;)
+fandom.com##.fandom-community-header__background:style(width: 100% !important)
+fandom.com##.fandom-sticky-header:style(left: 0 !important;)
+fandom.com##.search-modal::before:style(left: 0 !important;)
+fandom.com##body:style(border-left: none !important;)
+!! Hide notification popups at the bottom of the page
+fandom.com##.notifications-placeholder
+!! Hide the blue "Wikia" bar at the bottom-right corner, which starts with "Check out Fandom..."
+fandom.com###WikiaBar
+!! Hide the global footer at the bottom of every page
+fandom.com##.global-footer
+!! Hide the section "fan feed" at the bottom of the page
+fandom.com###mixed-content-footer
+!! Hide the rights sidebar, which contains "popular pages" and "others like you also viewed" sections
+fandom.com##.page__right-rail
+!! Hides the "explore" tab in the menu
+fandom.com##.explore-menu.wds-dropdown
+!! Hides tooltip that pops up when you try to highlight text
+fandom.com##.highlight__sticky-container
+!! Hides "Top Trending Searches" when you open search
+fandom.com##.search-seeding
+!! Hide edit buttons at the top-left of every page/article
+fandom.com##.page-side-tool.page-side-edit
+fandom.com##.mw-editsection
+
+!!! github
+!! Hide the changelog and announcements from the homepage
+github.com##aside .dashboard-changelog.mb-4
+github.com##.js-notice
+!! Hide the explore section from the homepage
+github.com##aside.feed-right-sidebar[aria-label="Explore"]
+!! Hide copilot upsells and settings
+github.com##react-app[app-name="react-code-view"] button[data-testid="copilot-popover-button"]
+github.com##ul.ActionListWrap svg.octicon-copilot:upward(li)
+!! Hide the achievements from user profiles
+github.com##.js-profile-editable-replace img.achievement-badge-sidebar:upward(div.border-top)
+
+!!! Google
+!! google search 
+! Short videos
+www.google.com##div[data-attrid="lab/cluster/content/Short videos"]
+www.google.com##g-scrolling-carousel:has([href^="https://www.youtube.com/shorts/"])
+! user reviews
+www.google.com##div[data-attrid="kc:/ugc:user_reviews"]
+!! Google Play
+play.google.com##section:has(div[data-g-id="reviews"])
+
+!!! imdb
+!! User reviews
+! review section
+imdb.com##section[data-testid="UserReviews"]
+! review link
+imdb.com##li:has(>a.isReview):nth-of-type(1)
+!! Related news
+imdb.com##section[data-testid="News"]
+!! history
+imdb.com##.recently-viewed
+!! interface
+imdb.com##.imdb-header__app-button
+imdb.com##.footer__app
+
+!!! instagram
+!! Don't like on double-click
+instagram.com##+js(aeld, dblclick)
+
+!!! letterboxd
+!! Homepage
+! This homepage will become customized as you follow active members on Letterboxd.
+letterboxd.com##.person-home .sub-heading:has(a[href="/members/"])
+! NEW ON LETTERBOXD
+letterboxd.com###recent-from-friends
+! POPULAR REVIEWS THIS WEEK
+letterboxd.com###popular-reviews
+! POPULAR LISTS
+letterboxd.com##section:has(>[href="/lists/popular/this/week/"])
+! RECENT SHOWDOWNS
+letterboxd.com##section:has(>[href="/showdown/"])
+!! moviepage
+! RECENT REVIEWS
+letterboxd.com###recent-reviews
+! WHERE TO WATCH
+letterboxd.com##.watch-panel
+! POPULAR LISTS
+letterboxd.com###film-popular-lists
+! RATINGS
+letterboxd.com##.ratings-histogram-chart
+! film stats
+letterboxd.com##.film-stats
+!! FILMS tab
+! JUST REVIEWED…
+letterboxd.com###live-feed
+! POPULAR REVIEWERS
+letterboxd.com##section:has(>[href="/reviewers/popular/this/week/"])
+!! LISTS tab
+! RECENTLY LIKED
+letterboxd.com###recently-liked-lists
+!! MEMBERS tab
+! navitem
+letterboxd.com##.main-nav-people
+!! profile
+letterboxd.com###favourites:has([href="/settings/"])
+
+!!! metacritic
+www.metacritic.com##.c-reviewsSection_carouselContainer-user
+www.metacritic.com##a[href*="/user-reviews/"]
+
+!!! nationalgeographic
+!! paywall
+www.nationalgeographic.com##.PaywallModal
+
+!!! nofilmschool
+nofilmschool.com##.postpage-bottomcontent,.postpage__sideCol
+
+!!! nytimes
+!! comments
+www.nytimes.com##.commentAdjustClass
+www.nytimes.com###comments-speech-bubble-bigBottom
+
+!!! pornhub
+!! recommendations
+! desktop
+www.pornhub.com###recommendedVideosVPage
+www.pornhub.com##.relatedVideos
+! mobile
+www.pornhub.com###related
+www.pornhub.com###recommended
+www.pornhub.com##a[data-label="related_tab"]
+www.pornhub.com##a[data-label="recommended_tab"]
+!! banner
+www.pornhub.com##.emailVerHomepageContainer
+
+!!! reddit
+!! recent posts
+www.reddit.com##recent-posts
+!! preview
+! desktop
+www.reddit.com##.preview-img
+! mobile
+www.reddit.com##.object-cover
+!! recent subreddits
+www.reddit.com##reddit-recent-pages
+!! related posts
+www.reddit.com##reddit-pdp-right-rail-post
+!! trending
+www.reddit.com###reddit-trending-searches-partial-container
+
+!!! rottentomatoes
+!! movie page
+www.rottentomatoes.com###audience-consensus,.audience-reviews
+!! review page
+www.rottentomatoes.com##.review_table:has(>.audience-review-row)
+
+!!! spotify
+!! buttons
+! Explore Premium
+open.spotify.com##[data-testid="upgrade-button"]
+! Install App
+open.spotify.com##a[href="/download"]
+!! Recently played
+open.spotify.com##section[aria-label="Recently played"]
+!! footer
+open.spotify.com##.main-view-container__mh-footer-container
+open.spotify.com##nav[data-testid="footer-div"]
+!! menu
+open.spotify.com##a[role="menuitem"][href*="/premium/"]
+
+!!! themoviedb/tmdb
+www.themoviedb.org##.social_panel
+
+!!! tiktok
+!! desktop
+www.tiktok.com##span[data-e2e="comment-icon"]:upward(button)
+www.tiktok.com##div[data-e2e="search-comment-container"]
+!! mobile
+! comments
+www.tiktok.com##div[data-e2e="comment-icon"]
+www.tiktok.com##div[data-e2e="video-comment-button"]
+www.tiktok.com##.comment-list-container
+! Open App
+www.tiktok.com##div[data-e2e="middle-cta-container"]
+
+!!! torrentgalaxy
+torrentgalaxy.to##.panel:has(a[name="postcomment"])
+
+!!! twitch
+!! login popup
+www.twitch.tv##.ReactModalPortal
+!! recommended channels
+www.twitch.tv##.side-nav--collapsed
+
+!!! x/twitter
+!! home
+x.com##div[aria-label="Timeline: Your Home Timeline"]
+!! explore
+x.com##div[aria-label="Timeline: Explore"]
+!! sidebar
+x.com##a[aria-label="Premium"]
+x.com##a[aria-label="Communities"]
+!! trending
+x.com##div[aria-label="Trending"]
+!! follow button
+x.com##button[aria-label^="Follow @"]
+!! new posts notification
+x.com##button[aria-label="New posts are available. Push the period key to go to the them."]
+
+
+!!!! YouTube
+
+!!! buttons
+!! global
+! voice search
+www.youtube.com###voice-search-button
+m.youtube.com##.searchbox-voice-search-wrapper
+m.youtube.com##.mobile-topbar-header-voice-search-button
+! create
+www.youtube.com##ytd-topbar-menu-button-renderer:has(button[aria-label="Create"])
+! download
+www.youtube.com##ytd-menu-service-item-download-renderer
+!! video page
+! join
+www.youtube.com###sponsor-button
+! actions-row
+www.youtube.com##ytd-download-button-renderer
+www.youtube.com##yt-button-view-model:has(>button-view-model>button[aria-label=Clip],>button-view-model>button[aria-label=Thanks])
+!! channel page
+www.youtube.com##button-view-model:has(>button[aria-label="Join this channel" ])
+!! channel creation
+www.youtube.com###create-channel-button
+m.youtube.com##ytm-channel-creation-form-renderer
+!! skeleton
+! masthead
+www.youtube.com##.masthead-skeleton-icon:nth-of-type(1)
+
+!!! channel page
+!! about
+! links section
+www.youtube.com##ytd-about-channel-renderer #links-section
+m.youtube.com##.about-channel-section:has(>.about-channel-new-links-container)
+! link preview
+youtube.com##yt-attribution-view-model:has(a[href^="https://www.youtube.com/redirect?event=channel_header"])
+!! featured video
+www.youtube.com##ytd-channel-featured-content-renderer #description-text
+www.youtube.com##ytd-channel-video-player-renderer #description
+!! store tab
+www.youtube.com##yt-tab-shape[tab-title="Store"]
+!! shelves
+! For You
+www.youtube.com##ytd-item-section-renderer[page-subtype="channels"]:has(.grid-subheader:has-text(/For You|为你推荐/))
+m.youtube.com##ytm-browse:has(div[tab-title="Home"],div[tab-title="首页"]) ytm-item-section-renderer:has(ytm-video-card-renderer)
+! recognized channel member
+www.youtube.com##ytd-recognition-shelf-renderer
+! members only videos
+www.youtube.com##ytd-item-section-renderer[page-subtype="channels"]:has(.badge-style-type-members-only)
+m.youtube.com##ytm-shelf-renderer:has(ytm-badge[data-type="BADGE_STYLE_TYPE_MEMBERS_ONLY"])
+! featured channels
+www.youtube.com##ytd-item-section-renderer[page-subtype="channels"]:has(ytd-channel-renderer,ytd-grid-channel-renderer)
+m.youtube.com##ytm-shelf-renderer:has(ytm-compact-channel-renderer)
+
+!!! comments
+!! comment section
+www.youtube.com##ytd-watch-flexy:has([subscribed],#actions [aria-pressed="true"]) #comments
+m.youtube.com##ytm-watch:has(.is-subscribed,[aria-pressed="true"]) ytm-item-section-renderer[section-identifier="comments-entry-point"]
+m.youtube.com##ytm-comments-entry-point-teaser-renderer
+!! chat
+www.youtube.com###chat-container
+!! community tab
+www.youtube.com##ytd-comment-action-buttons-renderer
+m.youtube.com##yt-comment-action-buttons-renderer
+
+!!! home
+!! videos
+www.youtube.com##ytd-browse[page-subtype="home"]
+m.youtube.com##div[tab-identifier="FEwhat_to_watch"] 
+
+!!! history
+!! history page
+www.youtube.com##ytd-section-list-renderer[page-subtype="history"]
+m.youtube.com##div[tab-identifier="FEhistory"]
+!! library page
+youtube.com##[section-identifier="library-recent"]
+
+!!! playables
+www.youtube.com##ytd-browse[page-subtype="playables"]
+m.youtube.com##ytm-horizontal-card-list-renderer:has(mini-game-card-view-model)
+m.youtube.com##div[tab-identifier="FEmini_app_destination"]
+
+!!! recommendations
+!! related
+! videos
+www.youtube.com###related
+m.youtube.com##ytm-item-section-renderer[section-identifier="related-items"] >lazy-list
+!! mobile player fullscreen
+m.youtube.com##.fullscreen-watch-next-entrypoint-wrapper
+m.youtube.com##.fullscreen-recommendations-wrapper
+
+!!! search
+!! about the results
+www.youtube.com###about-these-results
+m.youtube.com##ytm-search ytm-info-panel-container-renderer
+!! Movies,TVs
+www.youtube.com##ytd-movie-renderer
+m.youtube.com##ytm-compact-show-renderer
+m.youtube.com##ytm-search ytm-video-with-context-renderer:has(ytm-badge:has-text(/Not available|Preview only|Free with ads|Try now|Pre-order/))
+!! search results
+! recap
+www.youtube.com##ytd-search ytd-video-renderer:has(#channel-name:has-text(/\brecap/i))
+www.youtube.com##ytd-search ytd-channel-renderer:has(#channel-title:has-text(/\brecap/i))
+m.youtube.com##ytm-search ytm-video-with-context-renderer:has(ytm-badge-and-byline-renderer:has-text(/\brecap/i))
+m.youtube.com##ytm-search ytm-compact-channel-renderer:has(.compact-media-item-headline:has-text(/\brecap/i))
+! radio
+www.youtube.com##ytd-radio-renderer
+m.youtube.com##ytm-compact-radio-renderer
+! unrelated
+www.youtube.com##ytd-search ytd-item-section-renderer ytd-shelf-renderer
+www.youtube.com##ytd-search ytd-item-section-renderer ytd-horizontal-card-list-renderer
+m.youtube.com##ytm-video-with-context-renderer:has(ytm-badge:has-text(/Related|相关视频/))
+! product
+m.youtube.com##ytm-product-card-renderer
+! 4k badge
+m.youtube.com##ytm-badge-and-byline-renderer[data-is-all-badges="true"]
+!! video description
+www.youtube.com##ytd-search .metadata-snippet-container,ytd-search .metadata-snippet-container-one-line,ytd-search #expandable-metadata
+
+!!! shorts
+!! Disable infinite srolling in Youtube Shorts
+www.youtube.com##ytd-reel-video-renderer~ytd-reel-video-renderer:matches-path(/shorts/)
+!! shelves
+! shelves
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
+m.youtube.com##ytm-reel-shelf-renderer
+! empty space
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
+m.youtube.com##div[tab-identifier="FEsubscriptions"] ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
+!! search results
+www.youtube.com##ytd-search ytd-video-renderer:has(.ytd-thumbnail[href^="/shorts/"])
+m.youtube.com##ytm-search ytm-video-with-context-renderer:has(ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"])
+!! short tab
+youtube.com##yt-tab-shape[tab-title="Shorts"]
+www.youtube.com##ytd-rich-grid-renderer[is-shorts-grid]
+m.youtube.com##ytm-rich-grid-renderer.is-shorts
+!! chip bar
+www.youtube.com##yt-chip-cloud-chip-renderer:has(>[title="Shorts"])
+
+!!! sidebar
+!! home
+www.youtube.com##ytd-guide-entry-renderer:has(>a[href="/"])
+www.youtube.com##ytd-mini-guide-entry-renderer[aria-label="Home"]
+m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-w2w)
+m.youtube.com##.pivot-bar-fallback-item.w2w
+!! shorts
+www.youtube.com##ytd-guide-entry-renderer:has(>a[title="Shorts"])
+www.youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
+m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts,>.shorts)
+!! explore
+www.youtube.com##ytd-guide-section-renderer:has(a[href^="/feed/trending"])
+!! more from youtube
+www.youtube.com##ytd-guide-section-renderer:has(a[href="/premium"])
+!! footer
+www.youtube.com##ytd-guide-renderer #footer
+!! report hisory
+www.youtube.com##ytd-guide-entry-renderer:has(>a[href="/reporthistory"])
+!! help/feedback
+www.youtube.com##ytd-guide-entry-renderer:has(>a[title="Help"],>a[title="Send feedback"])
+www.youtube.com###help_panel_main_frame
+youtube.com###google-feedback
+
+!!! subscriptions
+www.youtube.com##ytd-item-section-renderer[page-subtype="subscriptions"]:has(ytd-grid-channel-renderer)
+
+!!! trending
+www.youtube.com##ytd-browse:has([page-subtype="trending"],[page-subtype="explore"])
+m.youtube.com##ytm-browse:has(div[tab-title="Now"],div[tab-title="刚刚"]) 
+
+!!! videoplay
+!! player
+! arrows
+www.youtube.com##.ytp-prev-button,.ytp-next-button
+m.youtube.com##button[aria-label="Previous video"],button[aria-label="Next video"]
+m.youtube.com##button[aria-label="上一个视频"],button[aria-label="下一个视频"]
+! autoplay buttons
+www.youtube.com##.ytp-button[data-tooltip-target-id="ytp-autonav-toggle-button"]
+m.youtube.com##.ytm-autonav-toggle-button-container
+! share button
+www.youtube.com##.ytp-share-button
+! miniplayer button
+www.youtube.com##.ytp-miniplayer-button
+! Scroll for details
+www.youtube.com##.ytp-fullerscreen-edu-button
+! Hide the video grid shown after a video ends
+www.youtube.com##.videowall-endscreen
+! Hide video suggestions that obscure the end of the video
+www.youtube.com##.ytp-ce-element
+||www.youtube.com/s/player/*/player_ias.vflset/*/endscreen.js^$script
+! premium
+www.youtube.com##.ytp-quality-menu .ytp-menuitem:has(.ytp-premium-label)
+!! description box
+! large channel infocard
+www.youtube.com##ytd-video-description-infocards-section-renderer
+m.youtube.com##ytm-video-description-infocards-section-renderer
+! Hide the chapter timeline in the video description box
+www.youtube.com###structured-description ytd-horizontal-card-list-renderer:not(:has(ytd-video-attribute-view-model))
+m.youtube.com##ytm-horizontal-card-list-renderer:has(.macromarker):not(:has(.video-attribute-card-shelf))
+! hashtags in description
+youtube.com##a[href^="/hashtag/"]
+!! below description box
+! merch shelf
+www.youtube.com##ytd-merch-shelf-renderer
+! ticket shelf
+www.youtube.com###ticket-shelf
+! topic (kids/ gaming)
+www.youtube.com##ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC]
+! box art (game being played)
+www.youtube.com##ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_BOX_ART]
+
+!!! YouTube Music
+!! Keep listening
+music.youtube.com##ytmusic-playback-progress-renderer:upward(ytmusic-carousel-shelf-renderer)
+!! history
+music.youtube.com##a[href="history"]
+music.youtube.com##.history-icon-button
+!! Hide "Mixed for you"
+music.youtube.com##h2 a[href="mixed_for_you"]:upward(ytmusic-carousel-shelf-renderer)
+!! Hide "Related" tab next to the music video
+music.youtube.com##.ytmusic-player-page.tab-header-container .tab-header:nth-of-type(3)
+
+
+!!!! Chinese sites
+
+!!! baidu
+!! baidu
+www.baidu.com##.tab_news
+www.baidu.com##.his-no-rec
+!! baike
+! desktop
+baike.baidu.com###J-lemma-video-list
+baike.baidu.com###J-right-tashuo
+baike.baidu.com##.z-index-fixed-content
+baike.baidu.com###J-bottom-tashuo
+baike.baidu.com##.fadeIn
+baike.baidu.com###J-related-search
+baike.baidu.com##.page-footer-content
+baike.baidu.com##.copyright
+! mobile
+baike.baidu.com##.lemma-card-bottom
+baike.baidu.com##.lemma-head-icons
+baike.baidu.com##.J-content-video-container
+baike.baidu.com##.floatTashuo-list-wrapper
+baike.baidu.com##.BK-after-content-wrapper
+baike.baidu.com###J-lemma-videos
+baike.baidu.com###J-tashuo-button-fixed
+!! tieba
+tieba.baidu.com###tiebaCustomPassLogin
+tieba.baidu.com##.topic_list_box
+tieba.baidu.com##.suggestion
+
+!!! bilibili
+!! home
+www.bilibili.com##.recommended-container_floor-aside
+www.bilibili.com##.bili-header__channel
+bilibili.com##.left-entry,.right-entry
+bilibili.com##.bili-footer
+www.bilibili.com##.palette-button-outer
+!! search
+bilibili.com##.trending
+bilibili.com##.history
+!! recommendations
+www.bilibili.com##.rec-list
+www.bilibili.com##.next-play > .video-page-card-small
+!! player
+! in-player
+www.bilibili.com##.bpx-player-top-wrap
+www.bilibili.com##.bpx-player-ending-wrap
+www.bilibili.com##.bpx-player-toast-wrap
+! below player
+www.bilibili.com##.video-tag-container
+www.bilibili.com##.bpx-player-sending-area
+www.bilibili.com###activity_vote
+!! danmu
+www.bilibili.com###danmukuBox
+www.bilibili.com##.bpx-player-row-dm-wrap
+www.bilibili.com##.bpx-player-cmd-dm-wrap
+space.bilibili.com##.fake-danmu
+!! live
+live.bilibili.com###sections-vm
+live.bilibili.com###link-footer-vm
+live.bilibili.com###sidebar-vm
+live.bilibili.com###aside-area-vm
+live.bilibili.com###switch-login-guide-vm
+!! login
+bilibili.com##.bili-mini-mask
+!! mobile
+m.bilibili.com##.m-home
+m.bilibili.com##.related-fit
+m.bilibili.com##.m-search-hot
+
+!!! douban
+douban.com##.subject-comments,.subject-reviews
+
+!!! pianyuan
+pianyuan.org##[href^="//movie.douban.com"]
+||pianyuan.org/wechat_donate.gif$image
+
+!!! qq
+!! ketang
+! desktop
+ke.qq.com###video-container > div
+ke.qq.com##.copyright-marquee-tips-container
+ke.qq.com##.mobile-watch
+ke.qq.com##.im-popconfirm
+ke.qq.com##.video-download-tips
+! mobile
+m.ke.qq.com##.download-btns
+m.ke.qq.com##.app-guide
+m.ke.qq.com##.download-wording
+
+!!! sspai
+sspai.com##.related-read-box
+sspai.com###btn-call-app
+
+!!! taobao/tmall
+!! desktop
+! general
+taobao.com###J_SiteFooter
+! home
+www.taobao.com##.search-hots
+www.taobao.com##.user-externalLink
+www.taobao.com##.tbh-hotsale
+! search page
+s.taobao.com##.ad:upward(.container)
+! tmall
+detail.tmall.com###footer1
+detail.tmall.com##.sn-mobile
+!! mobile
+! general
+m.taobao.com###tcodeSideBar
+m.taobao.com##.recommend-container
+! home
+main.m.taobao.com##.signIn
+main.m.taobao.com##.icons3-wrapper,.uone3-wrapper
+! tmall
+m.tmall.com###tcodeSideBar
+
+!!! xunlei
+pan.xunlei.com##.client-download
+pan.xunlei.com##.openMobileXunlei
+pan.xunlei.com##.aside-bottom__act-bar
+
+!!! zhihu
+!! hotsearch
+www.zhihu.com##.SearchBar-topSearchItem
+www.zhihu.com##.MobileHotSearch-container
+!! login
+zhihu.com##.Modal-wrapper
