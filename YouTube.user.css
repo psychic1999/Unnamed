@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.2
+@version 2.14.3
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -62,7 +62,6 @@ yt-confirm-dialog-renderer{
 }
 }
 /*SCREEN MOBILE*/
-ytm-app:has(ytm-search,ytm-browse):not(:has(div[tab-identifier="FEwhat_to_watch"] )),
 .yt-spec-bottom-sheet-layout__bottom-sheet-renderer-container,
 
 .engagement-panel-container,
@@ -73,7 +72,7 @@ ytm-app:has(ytm-search,ytm-browse):not(:has(div[tab-identifier="FEwhat_to_watch"
 ytm-watch-card-rich-header-renderer{
     background-color: /*[[color_screen]]*/!important;
 }
-html:has(ytm-watch,ytm-settings){
+html:has(ytm-watch,ytm-settings,ytm-search,ytm-browse):not(:has(div[tab-identifier="FEwhat_to_watch"] )){
     background-color: /*[[color_screen]]*/!important;
     background-blend-mode:overlay!important;
 }
