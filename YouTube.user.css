@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.0
+@version 2.14.1
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -18,6 +18,7 @@
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 /*////////////// DESKTOP //////////////*/
+/*BG IMAGE*/
 ytd-app,
 html:has(ytm-app){
     background-image: url(/*[[bgchanger]]*/)!important;
@@ -26,6 +27,7 @@ html:has(ytm-app){
     background-position: center;
     background-size:  /*[[bgsize]]*/!important;
 }
+/*TRANSPARENT*/
 #chips-wrapper,
 #filter-chip-bar,
 .ytd-tabbed-page-header,
@@ -35,6 +37,7 @@ ytm-mobile-topbar-renderer,
 ytm-channel-list-sub-menu-renderer{
     background-color: transparent!important;
 }
+/*SCREEN DESKTOP*/
 html[dark]{
 ytd-masthead,
 ytd-mini-guide-renderer,
@@ -58,6 +61,7 @@ yt-confirm-dialog-renderer{
     background-color: /*[[color_screen]]*/!important;
 }
 }
+/*SCREEN MOBILE*/
 ytm-app:has(ytm-search,ytm-browse):not(:has(div[tab-identifier="FEwhat_to_watch"] )),
 .yt-spec-bottom-sheet-layout__bottom-sheet-renderer-container,
 
@@ -72,6 +76,12 @@ ytm-watch-card-rich-header-renderer{
 html:has(ytm-watch,ytm-settings){
     background-color: /*[[color_screen]]*/!important;
     background-blend-mode:overlay!important;
+}
+/*SUBSCRIBE BUTTON*/
+#subscribe-button-shape >button,
+.animated-subscribe-flex-container >button{
+    color: #f1f1f1!important;
+    background: rgba(255,255,255,0.1)!important;
 }
     
 /*////////////// LAYOUT //////////////*/
