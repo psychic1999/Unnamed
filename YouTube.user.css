@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.4
+@version 2.14.5
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -262,34 +262,12 @@ div[tab-identifier="FEsubscriptions"] ytm-item-section-renderer .video-thumbnail
 }    
 
 /*////////////// PIVOTBAR //////////////*/
-ytm-pivot-bar-renderer {
-    border-top-color: currentcolor;
-}
 ytm-pivot-bar-item-renderer:has(>.pivot-subs,>.w2w){    
-    background-color: #f00!important;   
+    background-color: /*[[color_logo]]*/!important;   
 }
 ytm-pivot-bar-item-renderer:has(>.pivot-you,>.library){    
     background-color: lightslategrey!important;  
 }
-ytm-pivot-bar-item-renderer:has(>.pivot-subs[aria-selected="true"]){
-    border-top-right-radius: 4px;
-    outline-style: solid!important;
-    outline-color: darkred!important;
-    outline-width:3px;
-    z-index: 1!important;
-}
-ytm-pivot-bar-item-renderer:has(>.pivot-you[aria-selected="true"]){
-    border-top-left-radius: 4px;
-    outline-style: solid!important;
-    outline-color: darkslategrey!important;
-    outline-width:3px;
-    z-index: 1!important;
-}
-.pivot-subs[aria-selected="true"] .pivot-bar-item-title,
-.pivot-you[aria-selected="true"] .pivot-bar-item-title{
-    color: beige!important;
-}       
-
     
 /*////////////// PROGRESSBAR //////////////*/    
 #progress.ytd-thumbnail-overlay-resume-playback-renderer,
