@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.5
+@version 2.14.6
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -266,7 +266,14 @@ ytm-pivot-bar-item-renderer:has(>.pivot-subs,>.w2w){
     background-color: /*[[color_logo]]*/!important;   
 }
 ytm-pivot-bar-item-renderer:has(>.pivot-you,>.library){    
-    background-color: lightslategrey!important;  
+    background-color: /*[[color_logo]]*/!important;  
+    filter: hue-rotate(90deg);
+}
+ytm-pivot-bar-item-renderer:has(>.pivot-subs[aria-selected="false"]){
+    filter: brightness(0.8);
+}
+ytm-pivot-bar-item-renderer:has(>.pivot-you[aria-selected="false"]){
+    filter: hue-rotate(90deg) brightness(0.8);
 }
     
 /*////////////// PROGRESSBAR //////////////*/    
