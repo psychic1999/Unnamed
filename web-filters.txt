@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.20
+! Version: 1.9.21
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -543,9 +543,10 @@ pianyuan.org##[href^="//movie.douban.com"]
 !!! qq
 !! docs
 docs.qq.com###downloadClientContainer
+docs.qq.com###MoreMenuDownloadApp
+docs.qq.com###navigate-app-pc-trigger
 docs.qq.com##.desktop-vip-center
 docs.qq.com##button:has(>.desktop-icon-slacking)
-docs.qq.com###navigate-app-pc-trigger
 !! ketang
 ! desktop
 ke.qq.com###video-container > div
