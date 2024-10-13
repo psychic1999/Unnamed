@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.21
+! Version: 1.9.22
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -149,11 +149,6 @@ www.nationalgeographic.com##.PaywallModal
 
 !!! nofilmschool
 nofilmschool.com##.postpage-bottomcontent,.postpage__sideCol
-
-!!! nytimes
-!! comments
-www.nytimes.com##.commentAdjustClass
-www.nytimes.com###comments-speech-bubble-bigBottom
 
 !!! pornhub
 !! recommendations
