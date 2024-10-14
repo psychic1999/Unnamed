@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.22
+! Version: 1.9.23
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -417,8 +417,6 @@ www.youtube.com##.ytp-button[data-tooltip-target-id="ytp-autonav-toggle-button"]
 m.youtube.com##.ytm-autonav-toggle-button-container
 ! share button
 www.youtube.com##.ytp-share-button
-! miniplayer button
-www.youtube.com##.ytp-miniplayer-button
 ! Scroll for details
 www.youtube.com##.ytp-fullerscreen-edu-button
 ! Hide the video grid shown after a video ends
