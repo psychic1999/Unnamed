@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.6
+@version 2.14.7
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -55,6 +55,7 @@ tp-yt-app-toolbar.ytd-tabbed-page-header,
 .yt-contextual-sheet-layout-wiz,
     
 ytd-watch-flexy,
+.playlist-items.ytd-playlist-panel-renderer,
 ytd-transcript-segment-list-renderer,
 ytd-transcript-search-panel-renderer,
 .watch-skeleton .skeleton-bg-color,
