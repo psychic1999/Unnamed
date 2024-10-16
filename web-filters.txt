@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.24
+! Version: 1.9.25
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -244,10 +244,6 @@ x.com##button[aria-label="New posts are available. Push the period key to go to 
 !! global
 ! voice search
 www.youtube.com###voice-search-button
-m.youtube.com##.searchbox-voice-search-wrapper
-m.youtube.com##.mobile-topbar-header-voice-search-button
-! create
-www.youtube.com##ytd-topbar-menu-button-renderer:has(button[aria-label="Create"])
 ! download
 www.youtube.com##ytd-menu-service-item-download-renderer
 !! video page
@@ -258,12 +254,6 @@ www.youtube.com##ytd-download-button-renderer
 www.youtube.com##yt-button-view-model:has(>button-view-model>button[aria-label=Clip],>button-view-model>button[aria-label=Thanks])
 !! channel page
 www.youtube.com##button-view-model:has(>button[aria-label="Join this channel" ])
-!! channel creation
-www.youtube.com###create-channel-button
-m.youtube.com##ytm-channel-creation-form-renderer
-!! skeleton
-! masthead
-www.youtube.com##.masthead-skeleton-icon:nth-of-type(1)
 
 !!! channel page
 !! about
