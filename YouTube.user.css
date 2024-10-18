@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.13
+@version 2.14.14
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -13,7 +13,7 @@
     1 "Fill" <<<EOT cover EOT;
     2 "Fit*" <<<EOT 100% EOT;
 }
-@advanced color color_screen "Screen color" rgba(0, 0, 0, .53)
+@advanced color color_screen "Screen color" rgba(0, 0, 0, .4)
 @advanced color color_logo "Logo color" rgb(255, 0, 0)
 
 ==/UserStyle== */
