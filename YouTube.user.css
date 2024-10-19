@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.14.14
+@version 2.14.15
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -34,7 +34,8 @@ html:has(ytm-app){
 .ytd-tabbed-page-header,
 ytd-mini-guide-entry-renderer,
 ytd-menu-popup-renderer,
-.ytd-engagement-panel-title-header-renderer,
+#header.ytd-engagement-panel-title-header-renderer,
+#content.ytd-engagement-panel-section-list-renderer,
 ytm-channel-list-sub-menu-renderer{
     background-color: transparent!important;
 }
