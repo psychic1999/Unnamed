@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.27
+! Version: 1.9.28
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -245,6 +245,7 @@ x.com##button[aria-label="New posts are available. Push the period key to go to 
 ! voice search
 www.youtube.com###voice-search-button
 m.youtube.com##.YtSearchboxComponentVoiceSearchWrapper
+m.youtube.com##.mobile-topbar-header-voice-search-button
 ! download
 www.youtube.com##ytd-menu-service-item-download-renderer
 !! video page
