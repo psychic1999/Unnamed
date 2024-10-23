@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.2
-@advanced color color_progbar "Video progress bar color" #ff00007a
+@version 2.15.3
+
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
     2 "Bing random" <<<EOT https://bing.img.run/rand_uhd.php EOT;
