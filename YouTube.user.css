@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.1
+@version 2.15.2
 @advanced color color_progbar "Video progress bar color" #ff00007a
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -271,49 +271,5 @@ ytm-pivot-bar-item-renderer:has(>.pivot-you[aria-selected="false"]){
     filter: hue-rotate(90deg) brightness(0.8);
 }
     
-/*////////////// PROGRESSBAR //////////////*/    
-#progress.ytd-thumbnail-overlay-resume-playback-renderer,
-.thumbnail-overlay-resume-playback-progress,
-.ytp-play-progress,
-.YtProgressBarLineProgressBarPlayed,
-.YtChapteredProgressBarChapteredPlayerBarFill,
-.YtChapteredProgressBarChapteredPlayerBarChapter[style*="background-color: red;"],
-.ytp-button[aria-pressed]:after{
-   background: /*[[color_progbar]]*/;
-   background: -moz-linear-gradient(top, /*[[color_progbar]]*/ 0%, /*[[color_progbar]]*/ 35%, #ffffff 65%, /*[[color_progbar]]*/ 100%);
-   background: -webkit-linear-gradient(top, /*[[color_progbar]]*/ 0%,#ffffff 35%,#ffffff 65%,/*[[color_progbar]]*/ 100%);
-   background: linear-gradient(to bottom, /*[[color_progbar]]*/ 0%,#ffffff 24%,#ffffff 65%,/*[[color_progbar]]*/ 100%);
-   box-shadow: 0px 0px 20px /*[[color_progbar]]*/, 0px 0px 20px /*[[color_progbar]]*/, 0px 0px 20px /*[[color_progbar]]*/ !important;
-}
-ytd-thumbnail-overlay-resume-playback-renderer,   
-ytm-thumbnail-overlay-resume-playback-renderer,
-.ytp-load-progress,
-.YtProgressBarLineProgressBarLoaded,
-.YtChapteredProgressBarChapteredPlayerBarLoaded{
-   background: #70B9FF;
-   background: -moz-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.3) 45%,  rgba(255, 255, 255, 0.3) 55%, rgba(120, 120, 120, 0.3) 100%);
-   background: -webkit-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(255, 255, 255, 0.3) 45%, rgba(255, 255, 255, 0.3) 55%,rgba(120, 120, 120, 0.3) 100%);
-   background: linear-gradient(to bottom, rgba(120, 120, 120, 0.3) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 55%,rgba(120, 120, 120, 0.3) 100%);
-   box-shadow: 0px 0px 12px rgba(120, 120, 120, 0.3), 0px 0px 12px rgba(120, 120, 120, 0.3), 0px 0px 12px rgba(120, 120, 120, 0.3) !important;
-}
-.ytp-scrubber-button,
-.YtProgressBarPlayheadProgressBarPlayheadDot {
-   background: rgba(255, 255, 255, 0)  !important;
-   border-color: rgba(255, 255, 255, 0)  !important;
-   box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0) !important;
-   transition: box-shadow 0.0s, background 0.0s !important;    
-}
-.ytp-scrubber-button:hover,
-.YtProgressBarPlayheadProgressBarPlayheadDotLarge,
-.ytp-live-badge[disabled]:before,
-.YtwPlayerTimeDisplayContentLiveDotHead::before,
-ytm-channel-list-sub-menu-avatar-renderer[status=live]::after,
-.ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox{
-   background: #FFFFFF !important;
-   background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 20%, /*[[color_progbar]]*/ 100%) !important;
-   background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 20%,/*[[color_progbar]]*/ 100%) !important;
-   background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 20%,/*[[color_progbar]]*/ 100%) !important;
-   border-color: #ffffff !important;
-   box-shadow: 0px 0px 10px /*[[color_progbar]]*/, 0px 0px 12px /*[[color_progbar]]*/, 0px 0px 14px /*[[color_progbar]]*/ !important; 
-}
+
 }    
