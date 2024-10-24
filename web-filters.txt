@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.28
+! Version: 1.9.29
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -263,7 +263,7 @@ www.youtube.com##button-view-model:has(>button[aria-label="Join this channel" ])
 www.youtube.com##ytd-about-channel-renderer #links-section
 m.youtube.com##.about-channel-section:has(>.about-channel-new-links-container)
 ! link preview
-youtube.com##yt-attribution-view-model:has(a[href^="https://www.youtube.com/redirect?event=channel_header"])
+youtube.com##yt-attribution-view-model:has(a[href^="https://www.youtube.com/redirect?event=channel_header"],a[href^="https://www.youtube.com/channel/"])
 !! featured video
 www.youtube.com##ytd-channel-featured-content-renderer #description-text
 www.youtube.com##ytd-channel-video-player-renderer #description
