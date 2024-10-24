@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.3
+@version 2.15.4
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -262,13 +262,13 @@ ytm-pivot-bar-item-renderer:has(>.pivot-subs,>.w2w){
 }
 ytm-pivot-bar-item-renderer:has(>.pivot-you,>.library){    
     background-color: /*[[color_logo]]*/!important;  
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(45deg);
 }
 ytm-pivot-bar-item-renderer:has(>.pivot-subs[aria-selected="false"]){
     filter: brightness(0.8);
 }
 ytm-pivot-bar-item-renderer:has(>.pivot-you[aria-selected="false"]){
-    filter: hue-rotate(90deg) brightness(0.8);
+    filter: hue-rotate(45deg) brightness(0.8);
 }
     
 
