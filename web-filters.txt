@@ -284,7 +284,6 @@ m.youtube.com##ytm-shelf-renderer:has(ytm-compact-channel-renderer)
 
 !!! comments
 !! comment section
-www.youtube.com###comments
 m.youtube.com##ytm-item-section-renderer[section-identifier="comments-entry-point"]
 !! chat
 www.youtube.com###chat-container
