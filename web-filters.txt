@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.29
+! Version: 1.9.30
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -8,9 +8,9 @@
 
 !!! crunchyroll
 !! premium promo
-www.crunchyroll.com##.erc-premium-header-link,.erc-premium-upsell-banner,.erc-watch-upsell-banner
-!! footer
-www.crunchyroll.com##.erc-footer
+www.crunchyroll.com##.premium-upsell-banner-container
+www.crunchyroll.com##.erc-premium-header-link
+www.crunchyroll.com##.upsell-banner-container
 
 !!! disqus
 ||disqus.com/embed/comments/^$all
