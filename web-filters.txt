@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.31
+! Version: 1.9.32
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -197,6 +197,9 @@ open.spotify.com##.main-view-container__mh-footer-container
 open.spotify.com##nav[data-testid="footer-div"]
 !! menu
 open.spotify.com##a[role="menuitem"][href*="/premium/"]
+
+!!! steam
+store.steampowered.com##.review_ctn
 
 !!! themoviedb/tmdb
 www.themoviedb.org##.social_panel
