@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.9.32
+! Version: 1.10.0
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -28,11 +28,6 @@ duckduckgo.com###features
 !! footer
 duckduckgo.com##.footer
 duckduckgo.com##.footer--mobile
-!! search-results
-! tab-all
-duckduckgo.com##ol.react-results--main article:has(a[href*=".cn"],a[href*="163.com"],a[href*="baidu.com"],a[href*="bilibili."],a[href*="douban.com"],a[href*="foxnews.com"],a[href*="msn.com"],a[href*="qq.com"],a[href*="reddit.com"],a[href*="sohu.com"],a[href*="weibo."],a[href*="zhihu.com"]) div[data-result="snippet"]
-! tab-news
-duckduckgo.com##.result--news:has(a[href*=".cn"],a[href*="163.com"],a[href*="foxnews.com"],a[href*="msn.com"],a[href*="qq.com"],a[href*="sohu.com"],a[href*="yahoo.com"]) .result__snippet
 
 !!! fandom
 !! Hide yellow sidebar
