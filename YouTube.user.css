@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.7
+@version 2.15.8
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -164,9 +164,10 @@ ytd-browse[page-subtype="subscriptions"] #video-title{
     line-height: 2rem!important;
     font-weight: 500!important;
 }
-ytd-search #video-title.ytd-playlist-renderer{
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+ytd-search #video-title.ytd-playlist-renderer,
+ytd-search .yt-lockup-metadata-view-model-wiz__title{
+    font-size: 1.6rem!important;
+    line-height: 2.2rem!important;
 }
 ytd-browse[page-subtype="subscriptions"] .ytd-video-meta-block{ 
     font-size: 1.2rem!important;
