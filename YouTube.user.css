@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.6
+@version 2.15.7
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -113,11 +113,12 @@ ytd-search #badges.ytd-video-renderer {
 ytd-search ytd-video-renderer ytd-thumbnail{
     min-width: 0!important;
 }   
-ytd-search #content.ytd-playlist-renderer{ 
+ytd-search #content.ytd-playlist-renderer,
+ytd-search .yt-lockup-view-model-wiz__metadata{ 
     width:100%;
 }
 ytd-search #list.ytd-playlist-renderer,
-yt-lockup-metadata-view-model{    
+ytd-search yt-lockup-metadata-view-model{    
     margin-right:8px;
 }
 ytd-search ytd-playlist-renderer{
@@ -126,12 +127,15 @@ ytd-search ytd-playlist-renderer{
     min-width:450px;
     justify-items: start;
 }
-yt-lockup-view-model{
+ytd-search yt-lockup-view-model{
     display: inline-flex!important;
     width:40%;
     min-width:450px;
     justify-items: start;
 }   
+ytd-search .yt-lockup-view-model-wiz{
+    display: inline-grid;  
+}
 ytd-search ytd-channel-renderer{
     display: inline-flex;
     width:40%!important;
@@ -160,7 +164,7 @@ ytd-browse[page-subtype="subscriptions"] #video-title{
     line-height: 2rem!important;
     font-weight: 500!important;
 }
-ytd-search #video-title.ytd-playlist-renderer {
+ytd-search #video-title.ytd-playlist-renderer{
     font-size: 1.6rem;
     line-height: 2.2rem;
 }
