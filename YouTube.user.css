@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.5
+@version 2.15.6
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -116,7 +116,8 @@ ytd-search ytd-video-renderer ytd-thumbnail{
 ytd-search #content.ytd-playlist-renderer{ 
     width:100%;
 }
-ytd-search #list.ytd-playlist-renderer {    
+ytd-search #list.ytd-playlist-renderer,
+yt-lockup-metadata-view-model{    
     margin-right:8px;
 }
 ytd-search ytd-playlist-renderer{
