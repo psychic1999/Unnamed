@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.10.7
+! Version: 1.10.8
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -262,9 +262,6 @@ www.youtube.com##ytd-about-channel-renderer #links-section
 m.youtube.com##.about-channel-section:has(>.about-channel-new-links-container)
 ! link preview
 youtube.com##yt-attribution-view-model:has(a[href^="https://www.youtube.com/redirect?event=channel_header"],a[href^="https://www.youtube.com/channel/"])
-!! featured video
-www.youtube.com##ytd-channel-featured-content-renderer #description-text
-www.youtube.com##ytd-channel-video-player-renderer #description
 !! store tab
 www.youtube.com##yt-tab-shape[tab-title="Store"]
 !! shelves
