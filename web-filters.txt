@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.10.8
+! Version: 1.10.9
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -336,6 +336,7 @@ www.youtube.com##ytd-radio-renderer
 m.youtube.com##ytm-compact-radio-renderer
 ! unrelated
 www.youtube.com##ytd-search ytd-item-section-renderer ytd-shelf-renderer
+www.youtube.com##ytd-search ytd-item-section-renderer ytd-horizontal-card-list-renderer:not(:has(#time))
 m.youtube.com##ytm-video-with-context-renderer:has(ytm-badge:has-text(/Related|相关视频/))
 ! product
 m.youtube.com##ytm-product-card-renderer
