@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.10.3
+! Version: 1.10.4
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -349,7 +349,7 @@ m.youtube.com##ytm-badge-and-byline-renderer[data-is-all-badges="true"]
 www.youtube.com##ytd-search .metadata-snippet-container,ytd-search .metadata-snippet-container-one-line,ytd-search #expandable-metadata
 
 !!! search suggestions
-www.youtube.com##body:not(:has(yt-search.yt-searchbox-filled-query)) .YtSearchboxComponentSuggestionsContainer 
+www.youtube.com##body:not(:has(yt-searchbox.yt-searchbox-filled-query)) .YtSearchboxComponentSuggestionsContainer 
 m.youtube.com##header:not(:has(yt-searchbox.yt-searchbox-filled-query)) .yt-searchbox-suggestions-container
 
 !!! shorts
