@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.15.12
+@version 2.15.13
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -129,6 +129,12 @@ ytd-expandable-metadata-renderer[is-expanded] {
 }
 ytd-video-renderer:has(ytd-expandable-metadata-renderer[is-expanded]){
      z-index: 1;
+}
+ytd-search .metadata-snippet-container:hover,
+ytd-search .metadata-snippet-container-one-line:hover{
+    width:200%;
+    background-color:cyan;
+    z-index:1
 }
 ytd-search ytd-playlist-renderer{
     display: inline-grid;
