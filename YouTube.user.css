@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.16.3
+@version 2.16.4
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -173,6 +173,8 @@ ytd-search #content-section.ytd-channel-renderer{
 }    
 ytd-search #info-section.ytd-channel-renderer{
     margin-right:16px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 }
 ytd-browse[page-subtype="subscriptions"] #contents.ytd-rich-grid-renderer{
     padding-top: 0px;
