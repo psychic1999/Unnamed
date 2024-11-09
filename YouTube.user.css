@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.16.6
+@version 2.16.7
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -14,7 +14,7 @@
     2 "Fit*" <<<EOT 100% EOT;
 }
 @advanced color color_screen "Screen color" rgba(0, 0, 0, .4)
-@advanced color color_logo "Logo color" rgb(255, 0, 0)
+@advanced color color_logo "Logo color" #1375b7
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
