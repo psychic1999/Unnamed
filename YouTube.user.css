@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube fix
 @namespace youtube
-@version 2.16.7
+@version 2.16.8
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -81,6 +81,9 @@ ytm-watch-card-rich-header-renderer{
 html:has(ytm-watch,ytm-settings,ytm-search,ytm-browse):not(:has(div[tab-identifier="FEwhat_to_watch"] )){
     background-color: /*[[color_screen]]*/!important;
     background-blend-mode:overlay!important;
+}
+ytm-feed-filter-chip-bar-renderer.frosted-glass{
+    backdrop-filter: none;
 }
 /*LOGO*/
 /*desktop*/    
