@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.16.9
+@version 2.16.10
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -86,11 +86,12 @@ ytm-feed-filter-chip-bar-renderer.frosted-glass{
     backdrop-filter: none;
 }
 /*LOGO*/
-/*desktop*/    
+/*desktop*/   
+path[fill="#f00"],
 path[fill="#FF0033"],
 /*mobile*/ 
 [d="M63 14.87a7.885 7.885 0 00-5.56-5.56C52.54 8 32.88 8 32.88 8S13.23 8 8.32 9.31c-2.7.72-4.83 2.85-5.56 5.56C1.45 19.77 1.45 30 1.45 30s0 10.23 1.31 15.13c.72 2.7 2.85 4.83 5.56 5.56C13.23 52 32.88 52 32.88 52s19.66 0 24.56-1.31c2.7-.72 4.83-2.85 5.56-5.56C64.31 40.23 64.31 30 64.31 30s0-10.23-1.31-15.13z"]{
-    fill:/*[[color_logo]]*/;   
+    fill:/*[[color_logo]]*/!important;   
 }   
 /*////////////// LAYOUT //////////////*/
 ytd-search ytd-video-renderer{
