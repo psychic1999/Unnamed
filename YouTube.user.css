@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.16.10
+@version 2.16.11
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -36,6 +36,7 @@ ytd-mini-guide-entry-renderer,
 ytd-menu-popup-renderer,
 #header.ytd-engagement-panel-title-header-renderer,
 #content.ytd-engagement-panel-section-list-renderer,
+ytd-video-renderer.ytd-backstage-post-renderer,
 ytm-channel-list-sub-menu-renderer{
     background-color: transparent!important;
 }
