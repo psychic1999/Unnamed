@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.16.14
+@version 2.17.0
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -152,7 +152,7 @@ ytd-search ytd-video-renderer:has(.metadata-snippet-container:hover) #badges,
 ytd-search ytd-video-renderer:has(.metadata-snippet-container-one-line:hover) #badges{
     display:none;
 }
-#header.ytd-expandable-metadata-renderer{
+ytd-expandable-metadata-renderer:not([is-expanded]){
     filter: opacity(0.8);
 }
 ytd-search ytd-playlist-renderer{
