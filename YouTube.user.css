@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.17.2
+@version 2.17.3
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -215,7 +215,7 @@ ytd-browse[page-subtype="subscriptions"] .ytd-two-column-browse-results-renderer
 }
 ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer{
     margin-left: calc(var(--ytd-rich-grid-item-margin) / 2)!important;
-    --ytd-rich-grid-row-margin: 20px!important;
+    --ytd-rich-grid-row-margin: 16px!important;
     min-width:125px!important
 }
 ytd-browse[page-subtype="channels"] .ytd-two-column-browse-results-renderer[style*=" --ytd-rich-grid-items-per-row: 4"] {
@@ -232,7 +232,7 @@ ytd-browse[page-subtype="channels"] .ytd-two-column-browse-results-renderer[styl
 }
 ytd-browse[page-subtype="channels"] ytd-rich-item-renderer{
     margin-left: calc(var(--ytd-rich-grid-item-margin) / 2)!important;
-    --ytd-rich-grid-row-margin: 20px!important
+    --ytd-rich-grid-row-margin: 16px!important
 }
 /*////////////// HIDE TEXT ON PLAYER ACTION BUTTONS //////////////*/
 button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__button-text-content{
