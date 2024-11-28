@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.11.0
+! Version: 1.11.1
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -203,6 +203,7 @@ www.themoviedb.org##.social_panel
 !! desktop
 www.tiktok.com##span[data-e2e="comment-icon"]:upward(button)
 www.tiktok.com##div[data-e2e="search-comment-container"]
+www.tiktok.com##[class*=DivCommentContainer]
 !! mobile
 ! comments
 www.tiktok.com##div[data-e2e="comment-icon"]
