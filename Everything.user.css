@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Everything
 @namespace      github.com/openstyles/stylus
-@version        1.1.14
+@version        1.1.15
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -15,8 +15,6 @@
 /* NYT */
 .commentAdjustClass,
 #comments-speech-bubble-bigBottom,
-/* reddit */
-#comment-tree,
 /* twitter */
 div[aria-label="Timeline: Conversation"] div[data-testid="cellInnerDiv"]:not(:nth-of-type(1))
 {
