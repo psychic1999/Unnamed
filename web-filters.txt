@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.11.3
+! Version: 1.11.4
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -509,8 +509,6 @@ live.bilibili.com###link-footer-vm
 live.bilibili.com###sidebar-vm
 live.bilibili.com###aside-area-vm
 live.bilibili.com###switch-login-guide-vm
-!! login
-bilibili.com##.bili-mini-mask
 !! mobile
 m.bilibili.com##.m-home
 m.bilibili.com##.related-fit
