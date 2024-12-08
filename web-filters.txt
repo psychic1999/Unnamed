@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.11.4
+! Version: 1.11.5
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -280,7 +280,6 @@ m.youtube.com##ytm-shelf-renderer:has(ytm-compact-channel-renderer)
 
 !!! comments
 !! comment section
-www.youtube.com##ytd-comments
 m.youtube.com##ytm-item-section-renderer[section-identifier="comments-entry-point"]
 !! chat
 www.youtube.com###chat-container
@@ -288,8 +287,6 @@ www.youtube.com###teaser-carousel
 !! community tab
 www.youtube.com##ytd-comment-action-buttons-renderer
 m.youtube.com##yt-comment-action-buttons-renderer
-!! dislike count
-youtube.com##body:has([subscribed],#actions [aria-pressed="true"],.is-subscribed,ytm-slim-video-action-bar-renderer [aria-pressed="true"]) dislike-button-view-model #text
 
 !!! home
 !! videos
