@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.11.5
+! Version: 1.11.6
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -340,7 +340,7 @@ m.youtube.com##ytm-product-card-renderer
 ! 4k badge
 m.youtube.com##ytm-badge-and-byline-renderer[data-is-all-badges="true"]
 !! search suggestions
-youtube.com##body:not(:has(yt-searchbox.yt-searchbox-filled-query)) .YtSearchboxComponentSuggestionsContainer 
+youtube.com##body:not(:has(yt-searchbox.yt-searchbox-filled-query)) .ytSearchboxComponentSuggestionsContainer
 
 !!! shorts
 !! Disable infinite srolling in Youtube Shorts
