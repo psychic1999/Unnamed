@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.17.4
+@version 2.17.5
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -76,7 +76,7 @@ yt-confirm-dialog-renderer{
 .dialog,
 
 ytm-mobile-topbar-renderer,
-.YtSearchboxComponentSuggestionsContainer,
+.ytSearchboxComponentSuggestionsContainer,
 ytm-watch-card-rich-header-renderer{
     background-color: /*[[color_screen]]*/!important;
 }
