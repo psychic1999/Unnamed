@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.17.6
+@version 2.17.7
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.img.run/uhd.php EOT;
@@ -34,6 +34,7 @@ html:has(ytm-app){
 .ytd-tabbed-page-header,
 ytd-mini-guide-entry-renderer,
 #content.ytd-engagement-panel-section-list-renderer,
+#subheader.ytd-engagement-panel-title-header-renderer:not(:empty),
 .ytd-donation-shelf-renderer,
 ytd-video-renderer.ytd-backstage-post-renderer,
 ytm-channel-list-sub-menu-renderer{
