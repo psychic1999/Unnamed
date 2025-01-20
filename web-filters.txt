@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.11.7
+! Version: 1.11.8
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -76,6 +76,7 @@ www.google.com##div[data-attrid="lab/cluster/content/Short videos"]
 www.google.com##g-scrolling-carousel:has([href^="https://www.youtube.com/shorts/"])
 ! user reviews
 www.google.com##div[data-attrid="kc:/ugc:user_reviews"]
+www.google.com##.kp-wholepage:has([role="heading"]:has-text(Audience reviews))
 !! Google Play
 play.google.com##section:has(div[data-g-id="reviews"])
 
