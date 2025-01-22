@@ -1,20 +1,8 @@
 ! Title: web filters
-! Version: 1.11.10
+! Version: 1.11.11
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
-!!!! Everything
-###comments
-##.comments
-###comment
-##.comment
-##.reviews
-##.Chat
-/* NYT */
-##.commentAdjustClass
-###comments-speech-bubble-bigBottom
-/* twitter */
-##div[aria-label="Timeline: Conversation"] div[data-testid="cellInnerDiv"]:not(:nth-of-type(1))
 !!!! General websites 
 
 !!! crunchyroll
