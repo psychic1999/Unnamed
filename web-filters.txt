@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.12.0
+! Version: 1.12.1
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -563,6 +563,7 @@ pan.xunlei.com##.client-download
 pan.xunlei.com##.openMobileXunlei
 pan.xunlei.com##.aside-bottom__act-bar
 pan.xunlei.com##.viewer-app-tip
+lixian.xunlei.com##.files
 
 !!! zhihu
 !! hotsearch
