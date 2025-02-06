@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.12.3
+! Version: 1.12.4
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -436,6 +436,8 @@ music.youtube.com##.history-icon-button
 music.youtube.com##h2 a[href="mixed_for_you"]:upward(ytmusic-carousel-shelf-renderer)
 !! Hide "Related" tab next to the music video
 music.youtube.com##.ytmusic-player-page.tab-header-container .tab-header:nth-of-type(3)
+!! app install
+music.youtube.com##.app-install-link
 
 
 !!!! Chinese sites
