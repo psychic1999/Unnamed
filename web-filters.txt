@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.12.6
+! Version: 1.12.7
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -292,6 +292,7 @@ m.youtube.com##div[tab-identifier="FEwhat_to_watch"]
 www.youtube.com##ytd-section-list-renderer[page-subtype="history"]
 m.youtube.com##div[tab-identifier="FEhistory"]
 !! library page
+www.youtube.com##ytd-rich-section-renderer:has([aria-label="View all"][href="/feed/history"])
 youtube.com##[section-identifier="library-recent"]
 
 !!! playables
