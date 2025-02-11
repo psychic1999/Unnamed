@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.12.7
+! Version: 1.12.8
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -101,6 +101,8 @@ instagram.com##+js(aeld, dblclick)
 !! Homepage
 ! This homepage will become customized as you follow active members on Letterboxd.
 letterboxd.com##.person-home .sub-heading:has(a[href="/members/"])
+! Popular with friends
+letterboxd.com###popular-with-friends
 ! NEW ON LETTERBOXD
 letterboxd.com###recent-from-friends
 ! POPULAR REVIEWS THIS WEEK
