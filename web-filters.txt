@@ -269,6 +269,7 @@ m.youtube.com##ytm-browse:has(div[tab-title="Home"],div[tab-title="首页"]) ytm
 www.youtube.com##ytd-recognition-shelf-renderer
 ! members only videos
 www.youtube.com##ytd-item-section-renderer[page-subtype="channels"]:has(.badge-style-type-members-only)
+www.youtube.com##ytd-browse[page-subtype="channels"] ytd-rich-item-renderer:has(.badge-style-type-members-only)
 m.youtube.com##ytm-shelf-renderer:has(ytm-badge[data-type="BADGE_STYLE_TYPE_MEMBERS_ONLY"])
 ! featured channels
 www.youtube.com##ytd-item-section-renderer[page-subtype="channels"]:has(ytd-channel-renderer,ytd-grid-channel-renderer)
