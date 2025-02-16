@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.17.10
+@version 2.17.11
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.biturl.top/?resolution=UHD&format=image&index=0&mkt=en-US EOT;
@@ -244,8 +244,8 @@ button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria
 }
 
 button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__icon{
-    margin-right: -8px!important;  
-    margin-left: -8px!important;   
+    margin-right: -9px!important;  
+    margin-left: -9px!important;   
 }
 /*////////////// MOBILE //////////////*/
 
