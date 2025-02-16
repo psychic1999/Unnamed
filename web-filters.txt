@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.12.9
+! Version: 1.12.10
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -224,7 +224,7 @@ x.com##div[aria-label="Timeline: Your Home Timeline"]
 x.com##div[aria-label="Timeline: Explore"]
 !! sidebar
 x.com##a[aria-label="Premium"]
-x.com##a[href="/i/premium sign up"]
+x.com##a[href="/i/premium_sign_up"]
 x.com##a[aria-label="Communities"]
 !! trending
 x.com##div[aria-label="Trending"]
