@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name   YouTube Blue
 @namespace youtube
-@version 2.17.11
+@version 2.18.0
 
 @advanced dropdown bgchanger "Background Image" {
     1 "Bing daily*" <<<EOT https://bing.biturl.top/?resolution=UHD&format=image&index=0&mkt=en-US EOT;
@@ -239,11 +239,13 @@ ytd-browse[page-subtype="channels"] ytd-rich-item-renderer{
     --ytd-rich-grid-row-margin: 16px!important
 }
 /*////////////// HIDE TEXT ON PLAYER ACTION BUTTONS //////////////*/
-button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__button-text-content{
+button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__button-text-content,
+button[aria-label="Create"] .yt-spec-button-shape-next__button-text-content{
     display:none
 }
 
-button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__icon{
+button-view-model:has([aria-label="Share"],[aria-label="Save to playlist"],[aria-label="Report"]) .yt-spec-button-shape-next__icon,
+button[aria-label="Create"] .yt-spec-button-shape-next__icon{
     margin-right: -9px!important;  
     margin-left: -9px!important;   
 }
