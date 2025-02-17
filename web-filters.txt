@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.12.11
+! Version: 1.13.0
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -13,20 +13,6 @@ www.crunchyroll.com##.upsell-banner-container
 
 !!! disqus
 ||disqus.com/embed/comments/^$all
-
-!!! duckduckgo 
-!! news
-duckduckgo.com##.module--carousel-news
-duckduckgo.com##.result--news .js-result-image-wrapper
-!! videos
-duckduckgo.com##.module--carousel-videos
-!! related
-duckduckgo.com##.related-searches
-!! Learn more
-duckduckgo.com###features
-!! footer
-duckduckgo.com##.footer
-duckduckgo.com##.footer--mobile
 
 !!! fandom
 !! Hide yellow sidebar
