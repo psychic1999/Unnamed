@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.13.3
+! Version: 1.13.4
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -182,8 +182,7 @@ open.spotify.com##nav[data-testid="footer-div"]
 !! menu
 open.spotify.com##a[role="menuitem"][href*="/premium/"]
 !! comments
-open.spotify.com##div:has(>div >button:has-text(Leave a comment))
-open.spotify.com##div:has(>[data-encore-id="typeList"] >[data-testid="infinite-scroll-list"]):has([placeholder="Leave a comment"])
+open.spotify.com##[data-comment-id*="spotify"]
 
 !!! steam
 store.steampowered.com##.review_ctn
