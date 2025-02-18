@@ -1,5 +1,5 @@
 ! Title: web filters
-! Version: 1.13.0
+! Version: 1.13.1
 ! Expires: 1 day
 ! Homepage: https://github.com/psychic1999/Unnamed
 
@@ -180,6 +180,9 @@ open.spotify.com##.main-view-container__mh-footer-container
 open.spotify.com##nav[data-testid="footer-div"]
 !! menu
 open.spotify.com##a[role="menuitem"][href*="/premium/"]
+!! comments
+open.spotify.com##div:has(>[data-encore-id="typeList"] >[data-testid="infinite-scroll-list"] [data-comment-id*="spotify:comment:"])
+open.spotify.com##div:has(>div >div:has-text(Comments)):has(>div >button:has-text(Show all)):has(>[data-overlayscrollbars-initialize="true"] [data-comment-id*="spotify:comment:"])
 
 !!! steam
 store.steampowered.com##.review_ctn
